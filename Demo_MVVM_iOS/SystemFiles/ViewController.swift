@@ -6,6 +6,7 @@
 //
 
 import UIKit
+///  class  defining the behavior and presentation of a specific part of the app's user interface and logic, making it a fundamental building block in iOS application development.
 
 class ViewController: UIViewController {
     
