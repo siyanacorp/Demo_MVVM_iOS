@@ -99,12 +99,9 @@
 		8D8281722B735C2300603977 /* Demo_MVVM_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				8D8281732B735C2300603977 /* AppDelegate.swift */,
-				8D8281752B735C2300603977 /* SceneDelegate.swift */,
-				8D8281772B735C2300603977 /* ViewController.swift */,
-				8D8281792B735C2300603977 /* Main.storyboard */,
-				8D82817C2B735C2500603977 /* Assets.xcassets */,
-				8D82817E2B735C2500603977 /* LaunchScreen.storyboard */,
+				8D8281A32B736CDA00603977 /* SystemFiles */,
+				8D8281A42B736CEA00603977 /* Storyboards */,
+				8D8281A62B736CFE00603977 /* ResourceFiles */,
 				8D8281812B735C2500603977 /* Info.plist */,
 			);
 			path = Demo_MVVM_iOS;
@@ -125,6 +122,41 @@
 				8D8281962B735C2500603977 /* Demo_MVVM_iOSUITestsLaunchTests.swift */,
 			);
 			path = Demo_MVVM_iOSUITests;
+			sourceTree = "<group>";
+		};
+		8D8281A32B736CDA00603977 /* SystemFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8D8281732B735C2300603977 /* AppDelegate.swift */,
+				8D8281752B735C2300603977 /* SceneDelegate.swift */,
+				8D8281772B735C2300603977 /* ViewController.swift */,
+			);
+			path = SystemFiles;
+			sourceTree = "<group>";
+		};
+		8D8281A42B736CEA00603977 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8D8281792B735C2300603977 /* Main.storyboard */,
+				8D82817E2B735C2500603977 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8D8281A52B736CF600603977 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8D82817C2B735C2500603977 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8D8281A62B736CFE00603977 /* ResourceFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8D8281A52B736CF600603977 /* Assets */,
+			);
+			path = ResourceFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
