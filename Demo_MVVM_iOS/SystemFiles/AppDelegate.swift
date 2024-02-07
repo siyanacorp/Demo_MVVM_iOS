@@ -5,7 +5,6 @@
 //  Created by Jogender Singh on 07/02/24.
 
 import UIKit
-
 /// The AppDelegate class in an iOS application serves as the entry point and central coordinator for the application's lifecycle events. It's responsible for initializing the app, responding to system events such as app launch, termination, backgrounding, and foregrounding, as well as handling state transitions.
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
