@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     // TODO: DEINIT
     deinit{
-        print("ViewController has been REMOVED...!")
+        print("ViewController has been DEINIT...!")
     }
     
     // MARK: - ACTIONS

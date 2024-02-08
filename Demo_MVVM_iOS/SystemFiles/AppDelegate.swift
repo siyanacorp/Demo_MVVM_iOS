@@ -43,7 +43,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      - Parameter sceneSessions: Set UIScene session */
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
     }
-    
-    
 }
 
