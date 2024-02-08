@@ -38,9 +38,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
      
      - Parameter scene: UIScene
      */
-    func sceneDidDisconnect(_ scene: UIScene) {
-        
-    }
+    func sceneDidDisconnect(_ scene: UIScene) {}
     
     /**
      Scene did become active
@@ -49,9 +47,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
      
      - Parameter scene: UIScene
      */
-    func sceneDidBecomeActive(_ scene: UIScene) {
-        
-    }
+    func sceneDidBecomeActive(_ scene: UIScene) {}
     
     /**
      Scene will resign active
@@ -60,9 +56,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
      
      - Parameter scene: UIScene
      */
-    func sceneWillResignActive(_ scene: UIScene) {
-        
-    }
+    func sceneWillResignActive(_ scene: UIScene) {}
     
     /**
      Scene will enter foreground
@@ -71,9 +65,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
      
      - Parameter scene: UIScene
      */
-    func sceneWillEnterForeground(_ scene: UIScene) {
-        
-    }
+    func sceneWillEnterForeground(_ scene: UIScene) {}
     
     /**
      Scene did enter background
@@ -83,10 +75,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
      
      - Parameter scene: UIScene
      */
-    func sceneDidEnterBackground(_ scene: UIScene) {
-        
-    }
-    
-    
+    func sceneDidEnterBackground(_ scene: UIScene) {}
 }
-

@@ -8,7 +8,6 @@ import UIKit
 /// The AppDelegate class in an iOS application serves as the entry point and central coordinator for the application's lifecycle events. It's responsible for initializing the app, responding to system events such as app launch, termination, backgrounding, and foregrounding, as well as handling state transitions.
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
     /**
      Application did finish launching with options
      * Override point for customization after application launch
@@ -41,7 +40,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      
      - Parameter application: Main application reference
      - Parameter sceneSessions: Set UIScene session */
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-    }
+    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {}
 }
-

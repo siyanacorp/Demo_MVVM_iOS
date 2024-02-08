@@ -1,6 +1,8 @@
 included:
-    - Source
-    - Tests
+    - Demo_MVVM_iOS
+    - Demo_MVVM_iOSTests
+    - Demo_MVVM_iOSUITests
+
 excluded:
     - Carthage
     - Pods
@@ -8,9 +10,14 @@ excluded:
     - Source/ExcludedFile.swift
     - SwiftLint/Common/3rdPartyLib
     - Tests/SwiftLintFrameworkTests/Resources
+
+disabled_rules:
+    - trailing_whitespace
+
 analyzer_rules:
-    - unused_declaration
-    - unused_import
+    - unused_closure_parameter
+    - unused_enum_case
+
 opt_in_rules:
     - anyobject_protocol
     - array_init
@@ -81,15 +88,11 @@ opt_in_rules:
     - xct_specific_matcher
     - yoda_condition
 
-identifier_name:
-    min_length: # only min_length
-    error: 4 # only error
-    excluded:
-    - id
-    - URL
-    - GlobalAPIKey
+autocorrect: true
+
 number_separator:
     minimum_length: 5
+
 file_name:
     excluded:
     - main.swift
@@ -119,35 +122,62 @@ custom_rules:
     message: Rule Test Function mustn't end with `rule`
     regex: func\s*test\w+(r|R)ule\(\)
     severity: error
-
-
-
-
-
-force_cast: warning # implicitly
+    view_did_load_todo:
+    included:
+      - "**/*.swift"
+    name: ViewDidLoadTodoRule
+    message: TODOs related to the VIEW DID LOAD METHOD should be resolved
+    regex: '\/\/\s*TODO.*VIEW DID LOAD METHOD.*'
+    severity: warning
+    
+    todo_rule:
+    included:
+      - "**/*.swift"
+    name: TodoRule
+    message: TODO comments should be resolved
+    regex: '\/\/\s*TODO'
+    severity: warning
+    
+force_cast:
+    severity: warning # implicitly
 force_try:
     severity: warning # explicitly
-# rules that have both warning and error levels, can set just the warning level
-# implicitly
-line_length: 110
-    warning: 150
-    error: 200
+
+
+# Enforce consistent line breaks style
+line_length:
+    warning: 750
+    error: 1001
     ignores_function_declarations: true
     ignores_comments: true
-    ignore_comment_only_lines: true
     ignores_urls: true
-# they can set both implicitly with an array
-type_body_length:
-    - 300 # warning
-    - 400 # error
-# or they can set both explicitly
+
+# Enforce that opening braces are on the same line as the declaration
+brace_style:
+    allow_single_line_closure: true
+
+# Enforce consistent colon usage in type annotations
+colon: warning
+
+# Enforce consistent comma style
+comma: warning
+
+# Enforce consistent operator overloads
+custom_rules:
+    - my_custom_rule
+
+# Enforce consistent file header comments
+file_header:
+    - "This file is part of [Project]."
+    - "Copyright © [Year] [Author]."
+    - "All rights reserved."
+    
+    # or they can set both explicitly
 file_length:
     warning: 500
     error: 1200
 # naming rules can set warnings/errors for min_length and max_length
 # additionally they can set excluded names
-
-
 
 function_body_length:
     warning: 300
@@ -155,19 +185,10 @@ function_body_length:
 function_parameter_count:
     warning: 6
     error: 8
-
-
+    
 cyclomatic_complexity:
-    warning: 15
-    error: 25
-
-type_name:
-    min_length: 4 # only warning
-    max_length: # warning and error
-    warning: 40
-    error: 50
-    excluded: iPhone # excluded via string
-
+    warning: 10
+    error: 20
 
 comment:
     comment_mark_space: true
@@ -178,17 +199,47 @@ comment:
     - func
     - enum
 
+# Enforce consistent indentation
+indentation:
+    spaces: 2
 
-custom_rules:
-todo_rule:
-    name: "TODO Comment"
-    regex: "(//\\s*TODO:).*"
-    message: "TODO comments should be marked with a category (e.g., FIXME, TODO)."
-    severity: error # You can adjust the severity as needed.
+# Enforce that initializer call without arguments is written as `Type()`
+init_declaration:
+    implicit_init: false
+
+# Enforce that switch statements are either exhaustive or marked with default
+switch_case_alignment:
+    align_comments: true
+
+# Enforce consistent type naming conventions
+type_name:
+    allowed_symbols: "_"
+    min_length: 3
+    max_length: 100
 
 
-todo: TODO
+# Enforce consistent type usage
+type_body_length:
+    warning: 300
+    error: 500
 
+# Enforce that variable declarations are aligned
+variable_declaration_align:
+    align_excludes:
+    - comments
+    - string_literals
+
+# Enforce that vertical whitespace is used between top-level declarations
+vertical_whitespace: true
+
+
+identifier_name:
+    allowed_symbols: "_"
+    min_length: 4# only min_length
+    max_length: 100
+    excluded:
+    - id
+    - URL
+    - GlobalAPIKey
 
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji)
-
