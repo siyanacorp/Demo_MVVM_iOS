@@ -10,7 +10,6 @@ import UIKit
 /// The Scene Delegate is a crucial component introduced in iOS 13 to manage the lifecycle of multiple scenes in an iOS app, including windows and views. It acts as a coordinator for interactions between the app and the system, allowing for the creation, modification, and destruction of scenes as needed. Here's a detailed description of the Scene Delegate:
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-    
     /// In the context of iOS development, the "window" variable typically refers to the UIWindow object, which serves as the root view container for an iOS application. Here's a description of the window variable in an iOS app:
     var window: UIWindow?
     

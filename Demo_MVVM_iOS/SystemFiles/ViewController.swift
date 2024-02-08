@@ -21,6 +21,5 @@ class ViewController: UIViewController {
     deinit {
         print("ViewController has been DEINIT...!")
     }
-    
     // MARK: - ACTIONS
 }
