@@ -7,7 +7,10 @@ target 'Demo_MVVM_iOS' do
 
   # Pods for Demo_MVVM_iOS
   pod 'SwiftLint'
-
+  pod 'FirebaseAnalytics'
+  pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
+  
   target 'Demo_MVVM_iOSTests' do
     inherit! :search_paths
     # Pods for testing

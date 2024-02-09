@@ -5,6 +5,7 @@
 //  Created by Jogender Singh on 07/02/24.
 
 import UIKit
+import FirebaseCore
 /// The AppDelegate class in an iOS application serves as the entry point and central coordinator for the application's lifecycle events. It's responsible for initializing the app, responding to system events such as app launch, termination, backgrounding, and foregrounding, as well as handling state transitions.
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      - Parameter launchOptions: Application launch options Keys
      - Returns: A boolean value (true/false) to tell if application is launched successfully with options. */
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
         return true
     }
     
