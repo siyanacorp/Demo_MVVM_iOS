@@ -215,7 +215,7 @@
 				8D82816C2B735C2300603977 /* Sources */,
 				8D82816D2B735C2300603977 /* Frameworks */,
 				8D82816E2B735C2300603977 /* Resources */,
-				73BE283B4484CE3870893218 /* [CP] Embed Pods Frameworks */,
+				B34C9AFCB79FA8C87FEA1053 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,7 +253,7 @@
 				8D82818C2B735C2500603977 /* Sources */,
 				8D82818D2B735C2500603977 /* Frameworks */,
 				8D82818E2B735C2500603977 /* Resources */,
-				81F5B8CFCABF1793DC797759 /* [CP] Embed Pods Frameworks */,
+				56C5D6F0B25E9719EBAC6281 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -381,24 +381,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		73BE283B4484CE3870893218 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Demo_MVVM_iOS/Pods-Demo_MVVM_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Demo_MVVM_iOS/Pods-Demo_MVVM_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo_MVVM_iOS/Pods-Demo_MVVM_iOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81F5B8CFCABF1793DC797759 /* [CP] Embed Pods Frameworks */ = {
+		56C5D6F0B25E9719EBAC6281 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -454,6 +437,23 @@
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+		B34C9AFCB79FA8C87FEA1053 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo_MVVM_iOS/Pods-Demo_MVVM_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo_MVVM_iOS/Pods-Demo_MVVM_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo_MVVM_iOS/Pods-Demo_MVVM_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		D84E945BA639B4FC47DE913A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
