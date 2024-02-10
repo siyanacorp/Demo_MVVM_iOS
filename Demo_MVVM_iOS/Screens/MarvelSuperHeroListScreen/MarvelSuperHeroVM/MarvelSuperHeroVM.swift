@@ -8,9 +8,9 @@
 import Foundation
 import Combine
 /// ViewModel for a list of Marvel superheroes, responsible for fetching the superheroes from a web service and providing access to them for display.
-class MarvelSuperHeroListVM:ObservableObject {
+class MarvelSuperHeroListVM: ObservableObject {
     /// superHeros: An array of MarvelSuperHeroModel objects representing the superheroes.
-    @Published var superHeros:[MarvelSuperHeroModel]?
+    @Published var superHeros: [MarvelSuperHeroModel]?
     
     /// manager: The web service manager responsible for making network requests.
     private let manager: WebServiceManager = WebServiceManager.shared
@@ -46,6 +46,15 @@ class MarvelSuperHeroListVM:ObservableObject {
         }
     }
 }
+
+extension MarvelSuperHeroListVM {
+    var superHerosPublisher: AnyPublisher<[MarvelSuperHeroModel]?, Never> {
+        $superHeros
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
+    }
+}
+
 
 extension MarvelSuperHeroListVM{
     /// Returns the number of sections in the list of Marvel superheroes, which is always 1.

@@ -26,4 +26,12 @@ class MarvelSuperHeroTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    internal func configure(with info:MarvelSuperHeroVM?){
+        if let info = info{
+            self.labelNameSuperHero.text = info.name
+            self.labelBioSuperHero.text = info.bio
+        }
+        
+    }
+    
 }

@@ -10,7 +10,7 @@ import Combine
 /// View controller for displaying Marvel characters.
 class MarvelSuperHeroListViewC: UIViewController {
     // MARK: - IBOUTLETS
-    @IBOutlet weak var tableView:UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     // MARK: - PROPERTIES
     internal var cancellables = Set<AnyCancellable>()

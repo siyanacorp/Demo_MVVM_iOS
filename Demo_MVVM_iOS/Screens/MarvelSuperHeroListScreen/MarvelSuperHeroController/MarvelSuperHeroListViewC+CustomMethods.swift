@@ -16,16 +16,19 @@ extension MarvelSuperHeroListViewC{
     internal func initialSetup(){
         self.tableView.registerNibCell(MarvelSuperHeroTableViewCell.self, fromNibWithName: MarvelSuperHeroTableViewCell.className)
         
-        self.superHeroVM.$superHeros
+        // Call fetchSuperHeros to initiate the network request
+        self.superHeroVM.fetchSuperHeros()
+        
+        self.superHeroVM.superHerosPublisher
             .sink { [weak self] superHeros in
                 // Handle changes to the superHeros array here
                 // Update UI or perform any other actions
                 print("Superheroes array updated: \(superHeros?.count ?? 0) superheroes")
+                guard let self = self else{return}
+                self.tableView.reloadData()
             }
             .store(in: &cancellables)
         
-        // Call fetchSuperHeros to initiate the network request
-        self.superHeroVM.fetchSuperHeros()
+        
     }
-    
 }

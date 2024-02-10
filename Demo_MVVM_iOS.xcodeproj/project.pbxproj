@@ -18,6 +18,7 @@
 		8D82818B2B735C2500603977 /* Demo_MVVM_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82818A2B735C2500603977 /* Demo_MVVM_iOSTests.swift */; };
 		8D8281952B735C2500603977 /* Demo_MVVM_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8281942B735C2500603977 /* Demo_MVVM_iOSUITests.swift */; };
 		8D8281972B735C2500603977 /* Demo_MVVM_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8281962B735C2500603977 /* Demo_MVVM_iOSUITestsLaunchTests.swift */; };
+		8D850E1C2B7775C500880B1D /* MarvelSuperHeroListViewC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D850E1B2B7775C500880B1D /* MarvelSuperHeroListViewC+TableView.swift */; };
 		9D9A53562B76A84500D9DF70 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53552B76A84500D9DF70 /* WebServiceManager.swift */; };
 		9D9A53592B76AE5500D9DF70 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53582B76AE5500D9DF70 /* DataError.swift */; };
 		9D9A536B2B76C9A700D9DF70 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A536A2B76C9A700D9DF70 /* UIView+Extension.swift */; };
@@ -74,6 +75,7 @@
 		8D8281902B735C2500603977 /* Demo_MVVM_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Demo_MVVM_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8281942B735C2500603977 /* Demo_MVVM_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_MVVM_iOSUITests.swift; sourceTree = "<group>"; };
 		8D8281962B735C2500603977 /* Demo_MVVM_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_MVVM_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8D850E1B2B7775C500880B1D /* MarvelSuperHeroListViewC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarvelSuperHeroListViewC+TableView.swift"; sourceTree = "<group>"; };
 		92FA5D4245B2B31426B74BE5 /* Pods_Demo_MVVM_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_MVVM_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC377C312B06EE58CEAF59B /* Pods-Demo_MVVM_iOS-Demo_MVVM_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_MVVM_iOS-Demo_MVVM_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Demo_MVVM_iOS-Demo_MVVM_iOSUITests/Pods-Demo_MVVM_iOS-Demo_MVVM_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D9A53552B76A84500D9DF70 /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 			children = (
 				9D9A53732B773BF300D9DF70 /* MarvelSuperHeroListViewC.swift */,
 				9D9A53752B773C1800D9DF70 /* MarvelSuperHeroListViewC+CustomMethods.swift */,
+				8D850E1B2B7775C500880B1D /* MarvelSuperHeroListViewC+TableView.swift */,
 			);
 			path = MarvelSuperHeroController;
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 				9D9A536F2B76D04300D9DF70 /* NSObject+Extension.swift in Sources */,
 				8D8281782B735C2300603977 /* ViewController.swift in Sources */,
 				9D9A53862B7751A000D9DF70 /* Reachability.swift in Sources */,
+				8D850E1C2B7775C500880B1D /* MarvelSuperHeroListViewC+TableView.swift in Sources */,
 				9D9A53892B77564B00D9DF70 /* MarvelSuperHeroVM.swift in Sources */,
 				9D9A537B2B773DDE00D9DF70 /* MarvelSuperHeroTableViewCell.swift in Sources */,
 				9D9A53762B773C1800D9DF70 /* MarvelSuperHeroListViewC+CustomMethods.swift in Sources */,
