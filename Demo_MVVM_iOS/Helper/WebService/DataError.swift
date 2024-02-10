@@ -15,10 +15,11 @@ import Foundation
  - invalidData: Denotes invalid or corrupted data.
  - network: Signifies a network-related error, optionally encapsulating an underlying error.
  */
-enum DataError: Error{
-    case invalidResponse
-    case invalidURL
-    case invalidData
-    case connectivityError
+enum DataError: Error {
+    case invalidResponse(toast: String)
+    case invalidURL(toast: String)
+    case invalidData(toast: String)
+    case connectivityError(toast: String)
     case network(Error?)
 }
+

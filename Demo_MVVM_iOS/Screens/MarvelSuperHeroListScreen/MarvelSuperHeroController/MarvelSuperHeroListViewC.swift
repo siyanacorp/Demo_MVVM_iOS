@@ -13,6 +13,7 @@ class MarvelSuperHeroListViewC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - PROPERTIES
+    internal let refreshControl = UIRefreshControl()
     internal var cancellables = Set<AnyCancellable>()
     internal var superHeroVM = MarvelSuperHeroListVM()
     
@@ -26,5 +27,12 @@ class MarvelSuperHeroListViewC: UIViewController {
     // TODO: DEINIT
     deinit {
         print("MarvelSuperHeroListViewC has been DEINIT...!")
+    }
+    
+    // MARK: - ACTIONS
+    // TODO: REFRESH CONTROL ACTION
+    @objc func refreshData(_ sender: Any) {
+        self.superHeroVM.fetchSuperHeros()
+        self.refreshControl.endRefreshing()
     }
 }

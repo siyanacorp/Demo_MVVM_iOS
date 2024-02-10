@@ -5,15 +5,15 @@
 //  Created by Aman Kumar on 10/02/24.
 //
 
-import Foundation
 import Combine
+import Foundation
 /// ViewModel for a list of Marvel superheroes, responsible for fetching the superheroes from a web service and providing access to them for display.
 class MarvelSuperHeroListVM: ObservableObject {
     /// superHeros: An array of MarvelSuperHeroModel objects representing the superheroes.
     @Published var superHeros: [MarvelSuperHeroModel]?
     
     /// manager: The web service manager responsible for making network requests.
-    private let manager: WebServiceManager = WebServiceManager.shared
+    private let manager = WebServiceManager.shared
     
     /// allSuperHeros: A static resource representing the endpoint to fetch all superheroes from the web service.
     static var allSuperHeros: Resource<[MarvelSuperHeroModel]> = {
@@ -34,20 +34,47 @@ class MarvelSuperHeroListVM: ObservableObject {
      - Throws: Any error encountered during the request or decoding process.
      */
     @MainActor func fetchSuperHeros(){
+        GlobalLoader.shared.showLoader(title: AppText.shared.loadingTitle)
         Task{
             do{
                 let superHeros:[MarvelSuperHeroModel] = try await manager.request(resource: MarvelSuperHeroListVM.allSuperHeros)
                 self.superHeros = superHeros
-                print(self.superHeros?.count)
-            }catch{
-                print(error)
+                GlobalLoader.shared.hideLoader()
+            }catch let error as DataError {
+                GlobalLoader.shared.hideLoader()
+                switch error {
+                case .invalidResponse(let toast):
+                    ToastManager.shared.showToast(message: toast)
+                case .invalidURL(let toast):
+                    ToastManager.shared.showToast(message: toast)
+                case .invalidData(let toast):
+                    ToastManager.shared.showToast(message: toast)
+                case .connectivityError(let toast):
+                    ToastManager.shared.showToast(message: toast)
+                case .network(let underlyingError):
+                    if let error = underlyingError {
+                        print("🛑 Network error: \(error.localizedDescription)")
+                        ToastManager.shared.showToast(message: "🛑 Network error: \(error.localizedDescription)")
+                        // Handle network error case
+                    } else {
+                        print("🛑 Network error")
+                        ToastManager.shared.showToast(message: "🛑 Network error")
+                        // Handle generic network error case
+                    }
+                }
+            } catch {
+                GlobalLoader.shared.hideLoader()
+                print("🛑 \(error)")
+                print("🛑 \(error.localizedDescription)")
+                ToastManager.shared.showToast(message: "🛑 \(error.localizedDescription)")
+                // Handle other types of errors
             }
-            
         }
     }
 }
 
 extension MarvelSuperHeroListVM {
+    /// superHerosPublisher is a publisher that emits an optional array of MarvelSuperHeroModel instances or never fails. It receives updates from the superHeros property, dispatches events on the main thread, and erases its type to AnyPublisher.
     var superHerosPublisher: AnyPublisher<[MarvelSuperHeroModel]?, Never> {
         $superHeros
             .receive(on: DispatchQueue.main)

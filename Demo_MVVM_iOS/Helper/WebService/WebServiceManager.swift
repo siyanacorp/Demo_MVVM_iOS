@@ -28,12 +28,16 @@ final class WebServiceManager{
     internal func request<T: Decodable>(resource: Resource<T>) async throws -> T {
         
         if Reachability.shared.checkInternetConnectivity(){
-            throw DataError.connectivityError
+            print(AppText.shared.connectivityErrorMessage)
+            throw DataError.connectivityError(toast: AppText.shared.connectivityErrorToast)
         }
+        print(AppText.shared.connectivityPassMessage)
         
         guard let url = URL(string: resource.url) else {
-            throw DataError.invalidURL
+            print(AppText.shared.invalidURLMessage)
+            throw DataError.invalidURL(toast: AppText.shared.invalidURLToast)
         }
+        print(AppText.shared.passURLMessage)
         
         var request = URLRequest(url: url)
         request.httpMethod = resource.httpMethod.rawValue
@@ -49,8 +53,10 @@ final class WebServiceManager{
         let (data, response) = try await URLSession.shared.data(for: request)
         
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
-            throw DataError.invalidResponse
+            print(AppText.shared.invalidResponseMessage)
+            throw DataError.invalidResponse(toast: AppText.shared.invalidResponseToast)
         }
+        print(AppText.shared.passResponseMessage)
         
         return try JSONDecoder().decode(T.self, from: data)
     }
