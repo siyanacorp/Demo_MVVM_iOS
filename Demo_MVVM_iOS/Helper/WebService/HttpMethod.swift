@@ -17,7 +17,7 @@ import Foundation
  - head: Represents the HEAD HTTP method.
  - options: Represents the OPTIONS HTTP method.
  */
-enum HttpMethod: String{
+enum HttpMethod: String {
     case get = "GET"
     case post = "POST"
     case put = "PUT"

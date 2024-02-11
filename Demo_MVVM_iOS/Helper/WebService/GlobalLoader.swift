@@ -5,8 +5,8 @@
 //  Created by Aman Kumar on 10/02/24.
 //
 
-import SwiftLoader
 import Foundation
+import SwiftLoader
 import UIKit
 
 /// Manages the display and hiding of a loader using SwiftLoader.
@@ -28,7 +28,7 @@ final class GlobalLoader {
     internal func showLoader(title: String?) {
         var config: SwiftLoader.Config = SwiftLoader.Config()
         config.size = 100
-        config.backgroundColor = UIColor(red:0.03, green:0.82, blue:0.7, alpha:1)
+        config.backgroundColor = UIColor(red : 0.03, green : 0.82, blue : 0.7, alpha : 1)
         config.spinnerColor = .white
         config.titleTextColor = .white
         config.spinnerLineWidth = 2.0
@@ -43,7 +43,6 @@ final class GlobalLoader {
         
         if scene.windows.first != nil {
             SwiftLoader.show(title: title, animated: true)
-            
         }
     }
     

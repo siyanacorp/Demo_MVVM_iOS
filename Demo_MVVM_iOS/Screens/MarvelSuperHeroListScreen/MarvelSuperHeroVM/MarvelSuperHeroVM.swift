@@ -33,14 +33,14 @@ class MarvelSuperHeroListVM: ObservableObject {
      - Returns: None.
      - Throws: Any error encountered during the request or decoding process.
      */
-    @MainActor func fetchSuperHeros(){
+    @MainActor func fetchSuperHeros() {
         GlobalLoader.shared.showLoader(title: AppText.shared.loadingTitle)
-        Task{
-            do{
-                let superHeros:[MarvelSuperHeroModel] = try await manager.request(resource: MarvelSuperHeroListVM.allSuperHeros)
+        Task {
+            do {
+                let superHeros: [MarvelSuperHeroModel] = try await manager.request(resource: MarvelSuperHeroListVM.allSuperHeros)
                 self.superHeros = superHeros
                 GlobalLoader.shared.hideLoader()
-            }catch let error as DataError {
+            } catch let error as DataError {
                 GlobalLoader.shared.hideLoader()
                 switch error {
                 case .invalidResponse(let toast):
@@ -82,10 +82,9 @@ extension MarvelSuperHeroListVM {
     }
 }
 
-
-extension MarvelSuperHeroListVM{
+extension MarvelSuperHeroListVM {
     /// Returns the number of sections in the list of Marvel superheroes, which is always 1.
-    var numberOfSections:Int{
+    var numberOfSections: Int {
         return 1
     }
     
@@ -95,7 +94,7 @@ extension MarvelSuperHeroListVM{
      - Parameter section: The section index for which the number of rows is requested.
      - Returns: The number of rows in the specified section.
      */
-    func numberOfRowsInSection(_ section: Int) -> Int{
+    func numberOfRowsInSection(_ section: Int) -> Int {
         return self.superHeros?.count ?? 0
     }
     
@@ -105,61 +104,60 @@ extension MarvelSuperHeroListVM{
      - Parameter index: The index of the superhero in the list.
      - Returns: The view model representing the superhero at the specified index.
      */
-    func superHeroAtIndex(_ index: Int) -> MarvelSuperHeroVM?{
-        guard let superHero = self.superHeros?[index] else{
+    func superHeroAtIndex(_ index: Int) -> MarvelSuperHeroVM? {
+        guard let superHero = self.superHeros?[index] else {
             return nil
         }
         return MarvelSuperHeroVM(superHero)
     }
 }
 
-
 /// ViewModel for a Marvel superhero, providing access to various properties like bio, name, image URL, etc.
 struct MarvelSuperHeroVM {
     private let superHero: MarvelSuperHeroModel
 }
 
-extension MarvelSuperHeroVM{
+extension MarvelSuperHeroVM {
     /**
      Initializes the MarvelSuperHeroVM with a MarvelSuperHeroModel instance.
      
      - Parameter superHero: The MarvelSuperHeroModel instance to be encapsulated by the view model.
      */
-    init(_ superHero: MarvelSuperHeroModel){
+    init(_ superHero: MarvelSuperHeroModel) {
         self.superHero = superHero
     }
 }
 
-extension MarvelSuperHeroVM{
-    var bio: String{
+extension MarvelSuperHeroVM {
+    var bio: String {
         return self.superHero.bio ?? String()
     }
     
-    var createdby: String{
+    var createdby: String {
         return self.superHero.createdby ?? String()
     }
     
-    var firstappearance: String{
+    var firstappearance: String {
         return self.superHero.firstappearance ?? String()
     }
     
-    var imageurl: String{
+    var imageurl: String {
         return self.superHero.imageurl ?? String()
     }
     
-    var name: String{
+    var name: String {
         return self.superHero.name ?? String()
     }
     
-    var publisher: String{
+    var publisher: String {
         return self.superHero.publisher ?? String()
     }
     
-    var realname: String{
+    var realname: String {
         return self.superHero.realname ?? String()
     }
     
-    var team: String{
+    var team: String {
         return self.superHero.team ?? String()
     }
 }

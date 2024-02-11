@@ -22,4 +22,3 @@ enum DataError: Error {
     case connectivityError(toast: String)
     case network(Error?)
 }
-

@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 /// Contains custom methods specific to the MarvelSuperHeroListViewC class.
-extension MarvelSuperHeroListViewC{
+extension MarvelSuperHeroListViewC {
     // TODO: INITIAL SETUP
     /**
      Performs initial setup for the class.
      */
-    internal func initialSetup(){
+    internal func initialSetup() {
         self.tableView.registerNibCell(MarvelSuperHeroTableViewCell.self, fromNibWithName: MarvelSuperHeroTableViewCell.className)
         
         if #available(iOS 10.0, *) {
@@ -30,10 +30,10 @@ extension MarvelSuperHeroListViewC{
         self.superHeroVM.fetchSuperHeros()
         
         self.superHeroVM.superHerosPublisher
-            .sink { [weak self] superHeros in
+            .sink { [weak self] _ in
                 // Handle changes to the superHeros array here
                 // Update UI or perform any other actions
-                guard let self = self else{return}
+                guard let self = self else { return }
                 self.tableView.reloadData()
             }
             .store(in: &cancellables)

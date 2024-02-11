@@ -5,8 +5,8 @@
 //  Created by Aman Kumar on 10/02/24.
 //
 
-import UIKit
 import Combine
+import UIKit
 /// View controller for displaying Marvel characters.
 class MarvelSuperHeroListViewC: UIViewController {
     // MARK: - IBOUTLETS

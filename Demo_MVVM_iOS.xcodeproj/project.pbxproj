@@ -41,7 +41,7 @@
 		9DDEDBF72B77EDDB0036365F /* GlobalLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEDBF62B77EDDB0036365F /* GlobalLoader.swift */; };
 		9DDEDBFA2B77F3AF0036365F /* AppText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEDBF92B77F3AF0036365F /* AppText.swift */; };
 		9DDEDBFD2B77FEBA0036365F /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 9DDEDBFC2B77FEBA0036365F /* Toast */; };
-		9DDEDBFF2B77FF5C0036365F /* GlobalToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEDBFE2B77FF5C0036365F /* GlobalToast.swift */; };
+		9DDEDBFF2B77FF5C0036365F /* ToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEDBFE2B77FF5C0036365F /* ToastManager.swift */; };
 		F2D2CDB933C968C84F790DD7 /* Pods_Demo_MVVM_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472D8222E9497010945C1EA7 /* Pods_Demo_MVVM_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,7 +105,7 @@
 		9DDEDBF12B77E4F50036365F /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		9DDEDBF62B77EDDB0036365F /* GlobalLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalLoader.swift; sourceTree = "<group>"; };
 		9DDEDBF92B77F3AF0036365F /* AppText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppText.swift; sourceTree = "<group>"; };
-		9DDEDBFE2B77FF5C0036365F /* GlobalToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalToast.swift; sourceTree = "<group>"; };
+		9DDEDBFE2B77FF5C0036365F /* ToastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,7 +246,7 @@
 				9D9A53852B7751A000D9DF70 /* Reachability.swift */,
 				9D9A53552B76A84500D9DF70 /* WebServiceManager.swift */,
 				9DDEDBF62B77EDDB0036365F /* GlobalLoader.swift */,
-				9DDEDBFE2B77FF5C0036365F /* GlobalToast.swift */,
+				9DDEDBFE2B77FF5C0036365F /* ToastManager.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -661,7 +661,7 @@
 				8D8281742B735C2300603977 /* AppDelegate.swift in Sources */,
 				9DDEDBF72B77EDDB0036365F /* GlobalLoader.swift in Sources */,
 				8D8281762B735C2300603977 /* SceneDelegate.swift in Sources */,
-				9DDEDBFF2B77FF5C0036365F /* GlobalToast.swift in Sources */,
+				9DDEDBFF2B77FF5C0036365F /* ToastManager.swift in Sources */,
 				9D9A53842B774D5D00D9DF70 /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

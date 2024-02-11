@@ -13,13 +13,16 @@ class MarvelSuperHeroTableViewCell: UITableViewCell {
     @IBOutlet weak var imageViewSuperHero: UIImageView!
     @IBOutlet weak var labelNameSuperHero: UILabel!
     @IBOutlet weak var labelBioSuperHero: UILabel!
+    
     // MARK: - PROPERTIES
+    
     // MARK: - VIEW LIFE CYCLE METHODS
     // TODO: AWAKE FROM NIB
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
     // TODO: SET SELECTED
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -47,10 +50,10 @@ class MarvelSuperHeroTableViewCell: UITableViewCell {
      Example usage:
      - Returns: None.
      */
-    internal func configure(with info:MarvelSuperHeroVM?){
-        if let info = info{
+    internal func configure(with info: MarvelSuperHeroVM?) {
+        if let info = info {
             self.imageViewSuperHero.sd_imageIndicator = SDWebImageActivityIndicator.gray
-            self.imageViewSuperHero.sd_setImage(with: URL(string: info.imageurl), placeholderImage:  UIImage(systemName: "photo"))
+            self.imageViewSuperHero.sd_setImage(with: URL(string: info.imageurl), placeholderImage: UIImage(systemName: "photo"))
             self.labelNameSuperHero.text = info.name
             
             if let plainText = info.bio.convertHTMLToPlainText() {

@@ -6,17 +6,15 @@
 //
 
 import Foundation
-struct MarvelSuperHeroModel : Codable {
-    
-    let bio : String?
-    let createdby : String?
-    let firstappearance : String?
-    let imageurl : String?
-    let name : String?
-    let publisher : String?
-    let realname : String?
-    let team : String?
-    
+struct MarvelSuperHeroModel: Codable {
+    let bio: String?
+    let createdby: String?
+    let firstappearance: String?
+    let imageurl: String?
+    let name: String?
+    let publisher: String?
+    let realname: String?
+    let team: String?
     
     enum CodingKeys: String, CodingKey {
         case bio = "bio"
@@ -40,5 +38,4 @@ struct MarvelSuperHeroModel : Codable {
         realname = try values.decodeIfPresent(String.self, forKey: .realname)
         team = try values.decodeIfPresent(String.self, forKey: .team)
     }
-    
 }

@@ -9,10 +9,10 @@ import Foundation
 import Network
 
 /// Singleton class for checking internet connectivity using the Network framework.
-final class Reachability{
+final class Reachability {
     /// Singleton instance of Reachability.
-    static var shared:Reachability = Reachability()
-    private init(){}
+    static var shared = Reachability()
+    private init() { }
     
     /**
      Checks internet connectivity asynchronously using the Network framework.

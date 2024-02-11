@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 private var overlayColorKey: UInt8 = 0
 private var gradientStartColorKey: UInt8 = 0
 private var gradientEndColorKey: UInt8 = 0
@@ -42,7 +41,6 @@ extension UIImageView {
             addGradientLayer()
         }
     }
-    
     
     private struct AssociatedKeys {
         static var overlayColor = "overlayColor"

@@ -1,13 +1,13 @@
 //
-//  GlobalToast.swift
+//  ToastManager.swift
 //  Demo_MVVM_iOS
 //
 //  Created by Aman Kumar on 11/02/24.
 //
 
 import Foundation
-import UIKit
 import Toast
+import UIKit
 
 /// Manages the display and hiding of a toast using ToastManager.
 final class ToastManager {

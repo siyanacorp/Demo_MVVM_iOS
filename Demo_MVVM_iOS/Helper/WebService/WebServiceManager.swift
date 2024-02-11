@@ -7,15 +7,14 @@
 
 import Foundation
 ///  Singleton instance managing web service interactions.
-final class WebServiceManager{
-    
+final class WebServiceManager {
     /// Singleton instance of WebServiceManager.
-    static let shared: WebServiceManager = WebServiceManager()
+    static let shared = WebServiceManager()
     
     /**
      Initialization Method
      * private init(){} is a concise notation that prevents instances of a class from being created outside the class itself, often used in singleton patterns for centralized control. */
-    private init(){}
+    private init() { }
     
     /**
      Handles an asynchronous request to a specified URL, decoding the response into a specified type.
@@ -26,8 +25,7 @@ final class WebServiceManager{
      - Throws: An error if the request fails or decoding the response encounters an issue.
      */
     internal func request<T: Decodable>(resource: Resource<T>) async throws -> T {
-        
-        if Reachability.shared.checkInternetConnectivity(){
+        if Reachability.shared.checkInternetConnectivity() {
             print(AppText.shared.connectivityErrorMessage)
             throw DataError.connectivityError(toast: AppText.shared.connectivityErrorToast)
         }

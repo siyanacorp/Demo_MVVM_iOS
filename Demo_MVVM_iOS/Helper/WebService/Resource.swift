@@ -14,9 +14,9 @@ import Foundation
  - body: Optional data representing the request body.
  - headers: Optional HTTP headers for the request.
  */
-struct Resource<T: Codable>{
+struct Resource<T: Codable> {
     let url: String
     var httpMethod: HttpMethod = .get
-    var body: Data? = nil
-    var headers: [String: String]? = nil
+    var body: Data?
+    var headers: [String: String]?
 }
