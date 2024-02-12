@@ -27,19 +27,19 @@
                                 </connections>
                             </tableView>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iEo-FX-1sA">
-                                <rect key="frame" x="132.66666666666666" y="371" width="127.66666666666666" height="110.33333333333331"/>
+                                <rect key="frame" x="130" y="371" width="133" height="110.33333333333331"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noDataFound" translatesAutoresizingMaskIntoConstraints="NO" id="CzD-CR-cjU">
-                                        <rect key="frame" x="34" y="0.0" width="60" height="60"/>
+                                        <rect key="frame" x="36.666666666666657" y="0.0" width="60" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="UGi-pf-Bnv"/>
                                             <constraint firstAttribute="width" secondItem="CzD-CR-cjU" secondAttribute="height" multiplier="1:1" id="bZe-Wn-LJZ"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efS-aU-Dfw">
-                                        <rect key="frame" x="0.0" y="60" width="127.66666666666667" height="50.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="60" width="133" height="50.333333333333343"/>
                                         <string key="text">Uh oh...!
-No data found...</string>
+No data found...!</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
