@@ -35,6 +35,7 @@ extension MarvelSuperHeroListViewC {
                 // Update UI or perform any other actions
                 guard let self = self else { return }
                 self.tableView.reloadData()
+                self.noDataFoundStackView.isHidden = !self.superHeroVM.superHeroListEmpty()
             }
             .store(in: &cancellables)
     }

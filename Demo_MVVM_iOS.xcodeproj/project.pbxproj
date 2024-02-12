@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		56E44E897BB69BD7E9AD78D9 /* Pods_Demo_MVVM_iOS_Demo_MVVM_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5028D5EE108831DB1E32B089 /* Pods_Demo_MVVM_iOS_Demo_MVVM_iOSUITests.framework */; };
 		5FA2EA6863BF714FC7F141E5 /* Pods_Demo_MVVM_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FA5D4245B2B31426B74BE5 /* Pods_Demo_MVVM_iOS.framework */; };
+		8D774CA82B79F3F20061569C /* SuperHeros.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D774CA72B79F3F20061569C /* SuperHeros.storyboard */; };
 		8D8281742B735C2300603977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8281732B735C2300603977 /* AppDelegate.swift */; };
 		8D8281762B735C2300603977 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8281752B735C2300603977 /* SceneDelegate.swift */; };
 		8D8281782B735C2300603977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8281772B735C2300603977 /* ViewController.swift */; };
@@ -70,6 +71,7 @@
 		5028D5EE108831DB1E32B089 /* Pods_Demo_MVVM_iOS_Demo_MVVM_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_MVVM_iOS_Demo_MVVM_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50631FD7053713537741BAC7 /* Pods-Demo_MVVM_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_MVVM_iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Demo_MVVM_iOSTests/Pods-Demo_MVVM_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		66B57A2EE664D79E1B8C33FD /* Pods-Demo_MVVM_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_MVVM_iOS.release.xcconfig"; path = "Target Support Files/Pods-Demo_MVVM_iOS/Pods-Demo_MVVM_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		8D774CA72B79F3F20061569C /* SuperHeros.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SuperHeros.storyboard; sourceTree = "<group>"; };
 		8D8281702B735C2300603977 /* Demo_MVVM_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_MVVM_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8281732B735C2300603977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D8281752B735C2300603977 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -205,8 +207,9 @@
 		8D8281A42B736CEA00603977 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				8D8281792B735C2300603977 /* Main.storyboard */,
 				8D82817E2B735C2500603977 /* LaunchScreen.storyboard */,
+				8D8281792B735C2300603977 /* Main.storyboard */,
+				8D774CA72B79F3F20061569C /* SuperHeros.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 			files = (
 				8D8281802B735C2500603977 /* LaunchScreen.storyboard in Resources */,
 				9D9A537C2B773DDE00D9DF70 /* MarvelSuperHeroTableViewCell.xib in Resources */,
+				8D774CA82B79F3F20061569C /* SuperHeros.storyboard in Resources */,
 				9D9CE2F92B75E4A400B1118C /* GoogleService-Info.plist in Resources */,
 				8D82817D2B735C2500603977 /* Assets.xcassets in Resources */,
 				8D82817B2B735C2300603977 /* Main.storyboard in Resources */,

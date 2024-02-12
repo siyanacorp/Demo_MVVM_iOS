@@ -110,6 +110,18 @@ extension MarvelSuperHeroListVM {
         }
         return MarvelSuperHeroVM(superHero)
     }
+    
+    /**
+     Checks if the list of superheroes is empty.
+     - Returns: A boolean value indicating whether the list of superheroes is empty or not.
+     */
+    func superHeroListEmpty() -> Bool {
+        guard let superHeroList = self.superHeros else {
+            return true
+        }
+        return superHeroList.isEmpty
+    }
+    
 }
 
 /// ViewModel for a Marvel superhero, providing access to various properties like bio, name, image URL, etc.

@@ -11,6 +11,7 @@ import UIKit
 class MarvelSuperHeroListViewC: UIViewController {
     // MARK: - IBOUTLETS
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var noDataFoundStackView: UIStackView!
     
     // MARK: - PROPERTIES
     internal let refreshControl = UIRefreshControl()
