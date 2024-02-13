@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		56E44E897BB69BD7E9AD78D9 /* Pods_Demo_MVVM_iOS_Demo_MVVM_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5028D5EE108831DB1E32B089 /* Pods_Demo_MVVM_iOS_Demo_MVVM_iOSUITests.framework */; };
 		5FA2EA6863BF714FC7F141E5 /* Pods_Demo_MVVM_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FA5D4245B2B31426B74BE5 /* Pods_Demo_MVVM_iOS.framework */; };
+		8D5957352B7B325A005388D8 /* GoodWeatherViewC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5957342B7B325A005388D8 /* GoodWeatherViewC+TableView.swift */; };
+		8D5957812B7B4D97005388D8 /* GoodWeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59577F2B7B4D97005388D8 /* GoodWeatherTableViewCell.swift */; };
+		8D5957822B7B4D97005388D8 /* GoodWeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5957802B7B4D97005388D8 /* GoodWeatherTableViewCell.xib */; };
+		8D5957872B7B61DD005388D8 /* SettingsViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5957862B7B61DD005388D8 /* SettingsViewC.swift */; };
+		8D5957892B7B620D005388D8 /* SettingsViewC+CutomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5957882B7B620D005388D8 /* SettingsViewC+CutomMethods.swift */; };
+		8D59578B2B7B624A005388D8 /* SettingsViewC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59578A2B7B624A005388D8 /* SettingsViewC+TableView.swift */; };
 		8D774CA82B79F3F20061569C /* SuperHeros.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D774CA72B79F3F20061569C /* SuperHeros.storyboard */; };
 		8D8281742B735C2300603977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8281732B735C2300603977 /* AppDelegate.swift */; };
 		8D8281762B735C2300603977 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8281752B735C2300603977 /* SceneDelegate.swift */; };
@@ -20,6 +26,11 @@
 		8D8281952B735C2500603977 /* Demo_MVVM_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8281942B735C2500603977 /* Demo_MVVM_iOSUITests.swift */; };
 		8D8281972B735C2500603977 /* Demo_MVVM_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8281962B735C2500603977 /* Demo_MVVM_iOSUITestsLaunchTests.swift */; };
 		8D850E1C2B7775C500880B1D /* MarvelSuperHeroListViewC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D850E1B2B7775C500880B1D /* MarvelSuperHeroListViewC+TableView.swift */; };
+		8D8E435C2B7A0EA500AB7FB1 /* AddCityScreenViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E435B2B7A0EA500AB7FB1 /* AddCityScreenViewC.swift */; };
+		8D8E435E2B7A0EFB00AB7FB1 /* AddCityScreenViewC+CustomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E435D2B7A0EFB00AB7FB1 /* AddCityScreenViewC+CustomMethods.swift */; };
+		8DE2DA782B7A01BF00915C6D /* GoodWeather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE2DA772B7A01BF00915C6D /* GoodWeather.storyboard */; };
+		8DE2DA7C2B7A0A1500915C6D /* GoodWeatherViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2DA7B2B7A0A1500915C6D /* GoodWeatherViewC.swift */; };
+		8DE2DA7E2B7A0B8500915C6D /* GoodWeatherViewC+CustomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2DA7D2B7A0B8500915C6D /* GoodWeatherViewC+CustomMethods.swift */; };
 		9D6A20952B77904A00E67382 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9D6A20942B77904A00E67382 /* SDWebImage */; };
 		9D6A20972B77A53A00E67382 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A20962B77A53A00E67382 /* UIImageView+Extension.swift */; };
 		9D9A53562B76A84500D9DF70 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53552B76A84500D9DF70 /* WebServiceManager.swift */; };
@@ -71,6 +82,12 @@
 		5028D5EE108831DB1E32B089 /* Pods_Demo_MVVM_iOS_Demo_MVVM_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_MVVM_iOS_Demo_MVVM_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50631FD7053713537741BAC7 /* Pods-Demo_MVVM_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_MVVM_iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Demo_MVVM_iOSTests/Pods-Demo_MVVM_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		66B57A2EE664D79E1B8C33FD /* Pods-Demo_MVVM_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_MVVM_iOS.release.xcconfig"; path = "Target Support Files/Pods-Demo_MVVM_iOS/Pods-Demo_MVVM_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		8D5957342B7B325A005388D8 /* GoodWeatherViewC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoodWeatherViewC+TableView.swift"; sourceTree = "<group>"; };
+		8D59577F2B7B4D97005388D8 /* GoodWeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherTableViewCell.swift; sourceTree = "<group>"; };
+		8D5957802B7B4D97005388D8 /* GoodWeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodWeatherTableViewCell.xib; sourceTree = "<group>"; };
+		8D5957862B7B61DD005388D8 /* SettingsViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewC.swift; sourceTree = "<group>"; };
+		8D5957882B7B620D005388D8 /* SettingsViewC+CutomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewC+CutomMethods.swift"; sourceTree = "<group>"; };
+		8D59578A2B7B624A005388D8 /* SettingsViewC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewC+TableView.swift"; sourceTree = "<group>"; };
 		8D774CA72B79F3F20061569C /* SuperHeros.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SuperHeros.storyboard; sourceTree = "<group>"; };
 		8D8281702B735C2300603977 /* Demo_MVVM_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_MVVM_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8281732B735C2300603977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +103,11 @@
 		8D8281942B735C2500603977 /* Demo_MVVM_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_MVVM_iOSUITests.swift; sourceTree = "<group>"; };
 		8D8281962B735C2500603977 /* Demo_MVVM_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_MVVM_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8D850E1B2B7775C500880B1D /* MarvelSuperHeroListViewC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarvelSuperHeroListViewC+TableView.swift"; sourceTree = "<group>"; };
+		8D8E435B2B7A0EA500AB7FB1 /* AddCityScreenViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityScreenViewC.swift; sourceTree = "<group>"; };
+		8D8E435D2B7A0EFB00AB7FB1 /* AddCityScreenViewC+CustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddCityScreenViewC+CustomMethods.swift"; sourceTree = "<group>"; };
+		8DE2DA772B7A01BF00915C6D /* GoodWeather.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoodWeather.storyboard; sourceTree = "<group>"; };
+		8DE2DA7B2B7A0A1500915C6D /* GoodWeatherViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherViewC.swift; sourceTree = "<group>"; };
+		8DE2DA7D2B7A0B8500915C6D /* GoodWeatherViewC+CustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoodWeatherViewC+CustomMethods.swift"; sourceTree = "<group>"; };
 		92FA5D4245B2B31426B74BE5 /* Pods_Demo_MVVM_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_MVVM_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC377C312B06EE58CEAF59B /* Pods-Demo_MVVM_iOS-Demo_MVVM_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_MVVM_iOS-Demo_MVVM_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Demo_MVVM_iOS-Demo_MVVM_iOSUITests/Pods-Demo_MVVM_iOS-Demo_MVVM_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D6A20962B77A53A00E67382 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -141,6 +163,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D59577D2B7B4D2D005388D8 /* GoodWeatherController */ = {
+			isa = PBXGroup;
+			children = (
+				8DE2DA7B2B7A0A1500915C6D /* GoodWeatherViewC.swift */,
+				8DE2DA7D2B7A0B8500915C6D /* GoodWeatherViewC+CustomMethods.swift */,
+				8D5957342B7B325A005388D8 /* GoodWeatherViewC+TableView.swift */,
+			);
+			path = GoodWeatherController;
+			sourceTree = "<group>";
+		};
+		8D59577E2B7B4D4D005388D8 /* GoodWeatherCellAndXib */ = {
+			isa = PBXGroup;
+			children = (
+				8D59577F2B7B4D97005388D8 /* GoodWeatherTableViewCell.swift */,
+				8D5957802B7B4D97005388D8 /* GoodWeatherTableViewCell.xib */,
+			);
+			path = GoodWeatherCellAndXib;
+			sourceTree = "<group>";
+		};
+		8D5957832B7B60C1005388D8 /* AddCityController */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E435B2B7A0EA500AB7FB1 /* AddCityScreenViewC.swift */,
+				8D8E435D2B7A0EFB00AB7FB1 /* AddCityScreenViewC+CustomMethods.swift */,
+			);
+			path = AddCityController;
+			sourceTree = "<group>";
+		};
+		8D5957842B7B6188005388D8 /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8D5957852B7B61B3005388D8 /* SettingsController */,
+			);
+			path = SettingsScreen;
+			sourceTree = "<group>";
+		};
+		8D5957852B7B61B3005388D8 /* SettingsController */ = {
+			isa = PBXGroup;
+			children = (
+				8D5957862B7B61DD005388D8 /* SettingsViewC.swift */,
+				8D5957882B7B620D005388D8 /* SettingsViewC+CutomMethods.swift */,
+				8D59578A2B7B624A005388D8 /* SettingsViewC+TableView.swift */,
+			);
+			path = SettingsController;
+			sourceTree = "<group>";
+		};
 		8D8281672B735C2300603977 = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +278,7 @@
 				8D82817E2B735C2500603977 /* LaunchScreen.storyboard */,
 				8D8281792B735C2300603977 /* Main.storyboard */,
 				8D774CA72B79F3F20061569C /* SuperHeros.storyboard */,
+				8DE2DA772B7A01BF00915C6D /* GoodWeather.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -229,6 +298,33 @@
 				8D8281A52B736CF600603977 /* Assets */,
 			);
 			path = ResourceFiles;
+			sourceTree = "<group>";
+		};
+		8DE2DA792B7A09BC00915C6D /* GoodWeatherScreens */ = {
+			isa = PBXGroup;
+			children = (
+				8D5957842B7B6188005388D8 /* SettingsScreen */,
+				8DE2DA7A2B7A09E600915C6D /* GoodWeatherScreen */,
+				8DE2DA7F2B7A0CB300915C6D /* AddCityScreen */,
+			);
+			path = GoodWeatherScreens;
+			sourceTree = "<group>";
+		};
+		8DE2DA7A2B7A09E600915C6D /* GoodWeatherScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8D59577D2B7B4D2D005388D8 /* GoodWeatherController */,
+				8D59577E2B7B4D4D005388D8 /* GoodWeatherCellAndXib */,
+			);
+			path = GoodWeatherScreen;
+			sourceTree = "<group>";
+		};
+		8DE2DA7F2B7A0CB300915C6D /* AddCityScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8D5957832B7B60C1005388D8 /* AddCityController */,
+			);
+			path = AddCityScreen;
 			sourceTree = "<group>";
 		};
 		9D9A53542B76A81E00D9DF70 /* Helper */ = {
@@ -258,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				9D9A53722B773BAA00D9DF70 /* MarvelSuperHeroListScreen */,
+				8DE2DA792B7A09BC00915C6D /* GoodWeatherScreens */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -474,8 +571,10 @@
 			files = (
 				8D8281802B735C2500603977 /* LaunchScreen.storyboard in Resources */,
 				9D9A537C2B773DDE00D9DF70 /* MarvelSuperHeroTableViewCell.xib in Resources */,
+				8DE2DA782B7A01BF00915C6D /* GoodWeather.storyboard in Resources */,
 				8D774CA82B79F3F20061569C /* SuperHeros.storyboard in Resources */,
 				9D9CE2F92B75E4A400B1118C /* GoogleService-Info.plist in Resources */,
+				8D5957822B7B4D97005388D8 /* GoodWeatherTableViewCell.xib in Resources */,
 				8D82817D2B735C2500603977 /* Assets.xcassets in Resources */,
 				8D82817B2B735C2300603977 /* Main.storyboard in Resources */,
 			);
@@ -645,10 +744,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DE2DA7E2B7A0B8500915C6D /* GoodWeatherViewC+CustomMethods.swift in Sources */,
 				9D9A53592B76AE5500D9DF70 /* DataError.swift in Sources */,
+				8D5957892B7B620D005388D8 /* SettingsViewC+CutomMethods.swift in Sources */,
 				9D9A53742B773BF300D9DF70 /* MarvelSuperHeroListViewC.swift in Sources */,
 				9D9A53822B774B3400D9DF70 /* HttpMethod.swift in Sources */,
 				9DDEDBF22B77E4F50036365F /* String+Extension.swift in Sources */,
+				8D8E435E2B7A0EFB00AB7FB1 /* AddCityScreenViewC+CustomMethods.swift in Sources */,
 				9D9A53802B7742FC00D9DF70 /* MarvelSuperHeroModel.swift in Sources */,
 				9DDEDBFA2B77F3AF0036365F /* AppText.swift in Sources */,
 				9D9A53562B76A84500D9DF70 /* WebServiceManager.swift in Sources */,
@@ -657,15 +759,21 @@
 				8D8281782B735C2300603977 /* ViewController.swift in Sources */,
 				9D9A53862B7751A000D9DF70 /* Reachability.swift in Sources */,
 				8D850E1C2B7775C500880B1D /* MarvelSuperHeroListViewC+TableView.swift in Sources */,
+				8D59578B2B7B624A005388D8 /* SettingsViewC+TableView.swift in Sources */,
 				9D9A53892B77564B00D9DF70 /* MarvelSuperHeroVM.swift in Sources */,
 				9D9A537B2B773DDE00D9DF70 /* MarvelSuperHeroTableViewCell.swift in Sources */,
 				9D6A20972B77A53A00E67382 /* UIImageView+Extension.swift in Sources */,
+				8D5957872B7B61DD005388D8 /* SettingsViewC.swift in Sources */,
+				8D5957352B7B325A005388D8 /* GoodWeatherViewC+TableView.swift in Sources */,
 				9D9A53762B773C1800D9DF70 /* MarvelSuperHeroListViewC+CustomMethods.swift in Sources */,
 				9D9A536D2B76CEB100D9DF70 /* UITableView+Extension.swift in Sources */,
 				8D8281742B735C2300603977 /* AppDelegate.swift in Sources */,
+				8D8E435C2B7A0EA500AB7FB1 /* AddCityScreenViewC.swift in Sources */,
 				9DDEDBF72B77EDDB0036365F /* GlobalLoader.swift in Sources */,
 				8D8281762B735C2300603977 /* SceneDelegate.swift in Sources */,
 				9DDEDBFF2B77FF5C0036365F /* ToastManager.swift in Sources */,
+				8DE2DA7C2B7A0A1500915C6D /* GoodWeatherViewC.swift in Sources */,
+				8D5957812B7B4D97005388D8 /* GoodWeatherTableViewCell.swift in Sources */,
 				9D9A53842B774D5D00D9DF70 /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

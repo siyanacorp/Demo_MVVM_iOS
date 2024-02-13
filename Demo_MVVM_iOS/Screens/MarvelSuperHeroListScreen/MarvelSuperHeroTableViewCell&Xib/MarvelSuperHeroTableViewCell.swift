@@ -7,7 +7,7 @@
 
 import SDWebImage
 import UIKit
-
+/// MarvelSuperHeroTableViewCell is a UITableViewCell subclass designed to display superhero information. It includes outlets for an image view, a name label, and a biography label. The class provides methods for configuring the cell with data from a MarvelSuperHeroVM instance, asynchronously loading the superhero image, setting the name, and displaying the biography in plain text.
 class MarvelSuperHeroTableViewCell: UITableViewCell {
     // MARK: - IBOUTLETS
     @IBOutlet weak var imageViewSuperHero: UIImageView!
