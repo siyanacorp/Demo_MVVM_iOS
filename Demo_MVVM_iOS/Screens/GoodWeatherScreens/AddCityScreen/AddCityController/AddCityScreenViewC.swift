@@ -27,7 +27,6 @@ class AddCityScreenViewC: UIViewController {
     // MARK: - ACTIONS
     // TODO: BUTTON SAVE TAPPED
     @IBAction func buttonSave_Tapped(_ sender: UIButton) {
-        self.dismiss(animated: true)
     }
     
     // TODO: BUTTON CLOSE TAPPED

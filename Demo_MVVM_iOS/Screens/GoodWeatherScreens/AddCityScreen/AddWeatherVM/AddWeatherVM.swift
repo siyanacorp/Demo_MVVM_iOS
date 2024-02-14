@@ -7,17 +7,16 @@
 
 import Foundation
 
-class AddWeatherVM{
-    internal func addWeather(for city: String){
+class AddWeatherVM {
+    internal func addWeather(for city: String) {
         let weatherUrl = Constants.Urls.urlForWeatherByCity(city: city)
         
-        static var weatherResouce: Resource<[GoodWeatherModel]> = {
-            let urlString = weatherUrl
-            var resource = Resource<[MarvelSuperHeroModel]>(url: urlString)
+        var weatherResource: Resource<[GoodWeatherModel]> = {
+            let urlString = weatherUrl.absoluteString
+            var resource = Resource<[GoodWeatherModel]>(url: urlString)
             resource.httpMethod = HttpMethod.get
             resource.body = nil
             return resource
         }()
-        
     }
 }

@@ -15,7 +15,7 @@ struct Constants{
          - Returns: A URL object pointing to the OpenWeatherMap API endpoint for retrieving weather data for the specified city.
          */
         static func urlForWeatherByCity(city: String) -> URL {
-            return URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city.escaped())&appid= 25a83bfee509af3da6227ecf7e3b0ef6&units=imperial")!
+            return URL(string: "https://api.weatherapi.com/v1/current.json?key=5d3cfb71ae184507b3144628231407&q=\(city.escaped())&aqi=no")!
         }
     }
 }
