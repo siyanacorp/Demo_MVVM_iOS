@@ -1,16 +1,16 @@
 //
-//  GoodWeatherTableViewCell.swift
+//  SettingsTableViewCell.swift
 //  Demo_MVVM_iOS
 //
-//  Created by Jogender Singh on 13/02/24.
+//  Created by Aman Kumar on 13/02/24.
 //
 
 import UIKit
 
-class GoodWeatherTableViewCell: UITableViewCell {
+class SettingsTableViewCell: UITableViewCell {
     // MARK: - IBOUTLETS
-    @IBOutlet weak var labelCityName: UILabel!
-    @IBOutlet weak var labelCityTemp: UILabel!
+    @IBOutlet weak var labelSettingName: UILabel!
+    @IBOutlet weak var imageViewCheck: UIImageView!
     
     // MARK: - PROPERTIES
     
@@ -27,4 +27,7 @@ class GoodWeatherTableViewCell: UITableViewCell {
         
         // Configure the view for the selected state
     }
+    
+    
+    
 }

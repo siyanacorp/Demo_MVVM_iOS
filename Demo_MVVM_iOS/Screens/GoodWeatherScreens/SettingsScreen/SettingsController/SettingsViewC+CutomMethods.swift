@@ -14,6 +14,6 @@ extension SettingsViewC {
      Performs initial setup for the class.
      */
     internal func initialSetup() {
-        self.tableView.registerNibCell(GoodWeatherTableViewCell.self, fromNibWithName: GoodWeatherTableViewCell.className)
+        self.tableView.registerNibCell(SettingsTableViewCell.self, fromNibWithName: SettingsTableViewCell.className)
     }
 }

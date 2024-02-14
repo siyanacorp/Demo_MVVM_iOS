@@ -21,10 +21,9 @@ extension SettingsViewC: UITableViewDataSource {
     
     // TODO: CELL FOR ROW AT INDEXPATH
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell: GoodWeatherTableViewCell = tableView.dequeueReusableCell(withIdentifier: GoodWeatherTableViewCell.className, for: indexPath) as? GoodWeatherTableViewCell else {
-            fatalError("NO \(GoodWeatherTableViewCell.className) found...!")
+        guard let cell: SettingsTableViewCell = tableView.dequeueReusableCell(withIdentifier: SettingsTableViewCell.className, for: indexPath) as? SettingsTableViewCell else {
+            fatalError("NO \(SettingsTableViewCell.className) found...!")
         }
-        cell.setupUIForSettings()
         return cell
     }
 }
