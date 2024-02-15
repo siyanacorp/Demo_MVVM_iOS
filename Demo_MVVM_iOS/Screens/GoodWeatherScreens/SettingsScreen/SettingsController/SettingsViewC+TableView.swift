@@ -16,7 +16,7 @@ extension SettingsViewC: UITableViewDataSource {
     
     // TODO: NUMBER OF ROWS IN SECTION
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.settingsVM.units.count
     }
     
     // TODO: CELL FOR ROW AT INDEXPATH
@@ -24,6 +24,16 @@ extension SettingsViewC: UITableViewDataSource {
         guard let cell: SettingsTableViewCell = tableView.dequeueReusableCell(withIdentifier: SettingsTableViewCell.className, for: indexPath) as? SettingsTableViewCell else {
             fatalError("NO \(SettingsTableViewCell.className) found...!")
         }
+        
+        cell.configure(with: self.settingsVM.units[indexPath.row])
         return cell
+    }
+}
+
+// MARK: - TABLE VIEW DELEGATE
+extension SettingsViewC: UITableViewDelegate {
+    // TODO: DID SELECT ROW AT INDEXPATH
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
 }

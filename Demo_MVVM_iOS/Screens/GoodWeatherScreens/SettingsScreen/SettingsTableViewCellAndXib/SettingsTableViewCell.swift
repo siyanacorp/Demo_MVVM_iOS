@@ -28,6 +28,10 @@ class SettingsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    
-    
+    internal func configure(with info: Unit?) {
+        if let info = info {
+            self.imageViewCheck.isHidden = true
+            self.labelSettingName.text = info.displayName
+        }
+    }
 }

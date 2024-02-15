@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		56E44E897BB69BD7E9AD78D9 /* Pods_Demo_MVVM_iOS_Demo_MVVM_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5028D5EE108831DB1E32B089 /* Pods_Demo_MVVM_iOS_Demo_MVVM_iOSUITests.framework */; };
 		5FA2EA6863BF714FC7F141E5 /* Pods_Demo_MVVM_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FA5D4245B2B31426B74BE5 /* Pods_Demo_MVVM_iOS.framework */; };
+		8D0272AD2B7DF5DF00B2205E /* SettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0272AC2B7DF5DF00B2205E /* SettingsVM.swift */; };
 		8D5957352B7B325A005388D8 /* GoodWeatherViewC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5957342B7B325A005388D8 /* GoodWeatherViewC+TableView.swift */; };
 		8D5957812B7B4D97005388D8 /* GoodWeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59577F2B7B4D97005388D8 /* GoodWeatherTableViewCell.swift */; };
 		8D5957822B7B4D97005388D8 /* GoodWeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5957802B7B4D97005388D8 /* GoodWeatherTableViewCell.xib */; };
@@ -89,6 +90,7 @@
 		5028D5EE108831DB1E32B089 /* Pods_Demo_MVVM_iOS_Demo_MVVM_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_MVVM_iOS_Demo_MVVM_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50631FD7053713537741BAC7 /* Pods-Demo_MVVM_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_MVVM_iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Demo_MVVM_iOSTests/Pods-Demo_MVVM_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		66B57A2EE664D79E1B8C33FD /* Pods-Demo_MVVM_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_MVVM_iOS.release.xcconfig"; path = "Target Support Files/Pods-Demo_MVVM_iOS/Pods-Demo_MVVM_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		8D0272AC2B7DF5DF00B2205E /* SettingsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVM.swift; sourceTree = "<group>"; };
 		8D5957342B7B325A005388D8 /* GoodWeatherViewC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoodWeatherViewC+TableView.swift"; sourceTree = "<group>"; };
 		8D59577F2B7B4D97005388D8 /* GoodWeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherTableViewCell.swift; sourceTree = "<group>"; };
 		8D5957802B7B4D97005388D8 /* GoodWeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodWeatherTableViewCell.xib; sourceTree = "<group>"; };
@@ -177,6 +179,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D0272AB2B7DF5AE00B2205E /* SettingsVM */ = {
+			isa = PBXGroup;
+			children = (
+				8D0272AC2B7DF5DF00B2205E /* SettingsVM.swift */,
+			);
+			path = SettingsVM;
+			sourceTree = "<group>";
+		};
 		8D59577D2B7B4D2D005388D8 /* GoodWeatherController */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +219,7 @@
 		8D5957842B7B6188005388D8 /* SettingsScreen */ = {
 			isa = PBXGroup;
 			children = (
+				8D0272AB2B7DF5AE00B2205E /* SettingsVM */,
 				8D5957852B7B61B3005388D8 /* SettingsController */,
 				9DAB55F52B7BDB9B00E28242 /* SettingsTableViewCellAndXib */,
 			);
@@ -825,6 +836,7 @@
 				9D9A53862B7751A000D9DF70 /* Reachability.swift in Sources */,
 				8D850E1C2B7775C500880B1D /* MarvelSuperHeroListViewC+TableView.swift in Sources */,
 				8D59578B2B7B624A005388D8 /* SettingsViewC+TableView.swift in Sources */,
+				8D0272AD2B7DF5DF00B2205E /* SettingsVM.swift in Sources */,
 				9D9A53892B77564B00D9DF70 /* MarvelSuperHeroVM.swift in Sources */,
 				9D9A537B2B773DDE00D9DF70 /* MarvelSuperHeroTableViewCell.swift in Sources */,
 				9D6A20972B77A53A00E67382 /* UIImageView+Extension.swift in Sources */,

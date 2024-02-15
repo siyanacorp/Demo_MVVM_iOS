@@ -13,6 +13,7 @@ class SettingsViewC: UIViewController {
     @IBOutlet weak var noDataFoundStackView: UIStackView!
     
     // MARK: - PROPERTIES
+    internal var settingsVM = SettingsVM()
     // MARK: - VIEW LIFE CYCLE METHODS
     // TODO: VIEW DID LOAD METHOD
     override func viewDidLoad() {
