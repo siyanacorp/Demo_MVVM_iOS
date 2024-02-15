@@ -11,12 +11,12 @@ import UIKit
 extension GoodWeatherViewC: UITableViewDataSource {
     // TODO: NUMBER OF SECTIONS IN TABLEVIEW
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return self.goodWeatherListVM.numberOfSections
     }
     
     // TODO: NUMBER OF ROWS IN SECTION
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.goodWeatherListVM.numberOfRowsInSection(section)
     }
     
     // TODO: CELL FOR ROW AT INDEXPATH
@@ -24,7 +24,7 @@ extension GoodWeatherViewC: UITableViewDataSource {
         guard let cell: GoodWeatherTableViewCell = tableView.dequeueReusableCell(withIdentifier: GoodWeatherTableViewCell.className, for: indexPath) as? GoodWeatherTableViewCell else {
             fatalError("NO \(GoodWeatherTableViewCell.className) found...!")
         }
-        
+        cell.configure(with: self.goodWeatherListVM.weatherAtIndex(indexPath.row))
         return cell
     }
 }

@@ -27,4 +27,27 @@ class GoodWeatherTableViewCell: UITableViewCell {
         
         // Configure the view for the selected state
     }
+    
+    /**
+     Configures the view with information from a GoodWeatherVM instance.
+     
+     This method updates the UI elements of the view with the information provided by the GoodWeatherVM instance.
+     
+     - Parameters:
+     - info: An instance of GoodWeatherVM containing weather information.
+     
+     - Important: This method assumes that the provided `info` object is not nil.
+     
+     - Note: The method updates the text of the labelCityName with the name of the city and the labelCityTemp with the temperature in Celsius.
+     
+     - Warning: Ensure that the `info` object is properly initialized before calling this method to prevent unexpected behavior.
+     
+     - Requires: The view must have outlets connected to labelCityName and labelCityTemp for the updates to reflect properly on the UI.
+     */
+    internal func configure(with info: GoodWeatherVM?) {
+        if let info = info {
+            self.labelCityName.text = info.name
+            self.labelCityTemp.text = "\(info.tempC)° C"
+        }
+    }
 }

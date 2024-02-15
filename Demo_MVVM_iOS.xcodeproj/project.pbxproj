@@ -53,6 +53,8 @@
 		9D9CE2F92B75E4A400B1118C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D9CE2F82B75E4A400B1118C /* GoogleService-Info.plist */; };
 		9DAB55F82B7BDBCD00E28242 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAB55F62B7BDBCD00E28242 /* SettingsTableViewCell.swift */; };
 		9DAB55F92B7BDBCD00E28242 /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DAB55F72B7BDBCD00E28242 /* SettingsTableViewCell.xib */; };
+		9DAE3A3C2B7D1611009C9569 /* GoodWeatherListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAE3A3B2B7D1611009C9569 /* GoodWeatherListVM.swift */; };
+		9DAE3A3E2B7D200E009C9569 /* AddCityScreenViewC+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAE3A3D2B7D200E009C9569 /* AddCityScreenViewC+UITextFieldDelegate.swift */; };
 		9DDEDBF22B77E4F50036365F /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEDBF12B77E4F50036365F /* String+Extension.swift */; };
 		9DDEDBF52B77EC560036365F /* SwiftLoader in Frameworks */ = {isa = PBXBuildFile; productRef = 9DDEDBF42B77EC560036365F /* SwiftLoader */; };
 		9DDEDBF72B77EDDB0036365F /* GlobalLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEDBF62B77EDDB0036365F /* GlobalLoader.swift */; };
@@ -136,6 +138,8 @@
 		9D9CE2F82B75E4A400B1118C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9DAB55F62B7BDBCD00E28242 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		9DAB55F72B7BDBCD00E28242 /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
+		9DAE3A3B2B7D1611009C9569 /* GoodWeatherListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherListVM.swift; sourceTree = "<group>"; };
+		9DAE3A3D2B7D200E009C9569 /* AddCityScreenViewC+UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddCityScreenViewC+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
 		9DDEDBF12B77E4F50036365F /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		9DDEDBF62B77EDDB0036365F /* GlobalLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalLoader.swift; sourceTree = "<group>"; };
 		9DDEDBF92B77F3AF0036365F /* AppText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppText.swift; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 			children = (
 				8D8E435B2B7A0EA500AB7FB1 /* AddCityScreenViewC.swift */,
 				8D8E435D2B7A0EFB00AB7FB1 /* AddCityScreenViewC+CustomMethods.swift */,
+				9DAE3A3D2B7D200E009C9569 /* AddCityScreenViewC+UITextFieldDelegate.swift */,
 			);
 			path = AddCityController;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				9D37C9A62B7C05B2000E5073 /* GoodWeatherDataModel */,
+				9DAE3A3A2B7D15FE009C9569 /* GoodWeatherListVM */,
 				8D59577D2B7B4D2D005388D8 /* GoodWeatherController */,
 				8D59577E2B7B4D4D005388D8 /* GoodWeatherCellAndXib */,
 			);
@@ -462,6 +468,14 @@
 				9DAB55F72B7BDBCD00E28242 /* SettingsTableViewCell.xib */,
 			);
 			path = SettingsTableViewCellAndXib;
+			sourceTree = "<group>";
+		};
+		9DAE3A3A2B7D15FE009C9569 /* GoodWeatherListVM */ = {
+			isa = PBXGroup;
+			children = (
+				9DAE3A3B2B7D1611009C9569 /* GoodWeatherListVM.swift */,
+			);
+			path = GoodWeatherListVM;
 			sourceTree = "<group>";
 		};
 		9DDEDBF82B77F3760036365F /* AppTest */ = {
@@ -802,6 +816,7 @@
 				8D8E435E2B7A0EFB00AB7FB1 /* AddCityScreenViewC+CustomMethods.swift in Sources */,
 				9D9A53802B7742FC00D9DF70 /* MarvelSuperHeroModel.swift in Sources */,
 				9DDEDBFA2B77F3AF0036365F /* AppText.swift in Sources */,
+				9DAE3A3C2B7D1611009C9569 /* GoodWeatherListVM.swift in Sources */,
 				9D9A53562B76A84500D9DF70 /* WebServiceManager.swift in Sources */,
 				9DAB55F82B7BDBCD00E28242 /* SettingsTableViewCell.swift in Sources */,
 				9D9A536B2B76C9A700D9DF70 /* UIView+Extension.swift in Sources */,
@@ -821,6 +836,7 @@
 				8D8281742B735C2300603977 /* AppDelegate.swift in Sources */,
 				8D8E435C2B7A0EA500AB7FB1 /* AddCityScreenViewC.swift in Sources */,
 				9DDEDBF72B77EDDB0036365F /* GlobalLoader.swift in Sources */,
+				9DAE3A3E2B7D200E009C9569 /* AddCityScreenViewC+UITextFieldDelegate.swift in Sources */,
 				8D8281762B735C2300603977 /* SceneDelegate.swift in Sources */,
 				9DDEDBFF2B77FF5C0036365F /* ToastManager.swift in Sources */,
 				8DE2DA7C2B7A0A1500915C6D /* GoodWeatherViewC.swift in Sources */,

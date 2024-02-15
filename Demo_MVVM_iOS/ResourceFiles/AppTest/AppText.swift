@@ -27,4 +27,7 @@ final class AppText {
     internal let passURLMessage: String = "✅ Valid URL."
     internal let connectivityPassMessage: String = "✅ Valid Connectivity."
     internal let networkPassMessage: String = "✅ Valid Network."
+    
+    internal let cityWeatherAddedToast: String = "City's weather added in list successfully."
+    internal let cityAddLoadingTitle: String = "Adding city..."
 }

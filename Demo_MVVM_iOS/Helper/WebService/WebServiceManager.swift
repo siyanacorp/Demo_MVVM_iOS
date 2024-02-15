@@ -56,6 +56,36 @@ final class WebServiceManager {
         }
         print(AppText.shared.passResponseMessage)
         
+         self.printResoponse(from: data)
+        
         return try JSONDecoder().decode(T.self, from: data)
+    }
+    
+    /**
+     Handles the parsing and printing of JSON response data.
+     
+     - Parameters:
+     
+     - data:  The data representing the JSON response.
+     - Returns: None.
+     Note: This method attempts to deserialize the provided data into a JSON object and prints out its contents.
+     If the JSON structure matches the expected format, it retrieves and prints an array of names.
+     If an error occurs during parsing or printing, it logs the error description.
+     Important: Ensure that the JSON data adheres to the expected format for successful parsing.
+     Otherwise, unexpected behavior may occur during deserialization.
+     */
+    private func printResoponse(from data: Data) {
+        do {
+            // make sure this JSON is in the format we expect
+            if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                // try to read out a string array
+                print(json)
+                if let names = json["names"] as? [String] {
+                    print(names)
+                }
+            }
+        } catch let error as NSError {
+            print("Failed to load: \(error.localizedDescription)")
+        }
     }
 }

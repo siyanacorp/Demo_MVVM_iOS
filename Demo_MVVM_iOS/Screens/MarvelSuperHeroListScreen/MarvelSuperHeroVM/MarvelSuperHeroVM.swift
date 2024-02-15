@@ -121,7 +121,6 @@ extension MarvelSuperHeroListVM {
         }
         return superHeroList.isEmpty
     }
-    
 }
 
 /// ViewModel for a Marvel superhero, providing access to various properties like bio, name, image URL, etc.

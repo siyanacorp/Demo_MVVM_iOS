@@ -27,6 +27,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardAppearance="light" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="address-level2"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="AZt-Nc-6ku" id="o2q-11-OG9"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -106,6 +109,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="buttonSaveRef" destination="yq2-lH-gqY" id="KuM-bL-awx"/>
                         <outlet property="textFieldCityName" destination="wcS-mR-7Hd" id="gP0-sf-qep"/>
                     </connections>
                 </viewController>
@@ -134,6 +138,7 @@
         <!--Navigation Controller-->
         <scene sceneID="r0k-bz-WE0">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdo-mV-E6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Uin-kc-SDk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="g1N-eW-eUC">
@@ -145,7 +150,6 @@
                         <segue destination="AZt-Nc-6ku" kind="relationship" relationship="rootViewController" id="hUl-0t-yMT"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hdo-mV-E6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1479" y="502"/>
         </scene>
@@ -167,7 +171,7 @@
                                 </connections>
                             </tableView>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oOF-G2-Djg">
-                                <rect key="frame" x="130" y="371" width="133" height="110.33333333333331"/>
+                                <rect key="frame" x="130" y="375" width="133" height="102.33333333333331"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noDataFound" translatesAutoresizingMaskIntoConstraints="NO" id="joB-ru-zOv">
                                         <rect key="frame" x="36.666666666666657" y="0.0" width="60" height="60"/>
@@ -177,7 +181,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Bq-gR-pQT">
-                                        <rect key="frame" x="0.0" y="60" width="133" height="50.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="60" width="133" height="42.333333333333343"/>
                                         <string key="text">Uh oh...!
 No data found...!</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
@@ -201,12 +205,12 @@ No data found...!</string>
                     <navigationItem key="navigationItem" title="Good weather" id="oaw-4d-bAi">
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="7Zk-cA-FMY">
                             <connections>
-                                <segue destination="CY1-tr-w0r" kind="presentation" id="E5m-NQ-cbB"/>
+                                <segue destination="CY1-tr-w0r" kind="presentation" identifier="SettingsViewC" id="E5m-NQ-cbB"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZCT-cP-cS8">
                             <connections>
-                                <segue destination="Uin-kc-SDk" kind="presentation" id="XY3-a6-xpJ"/>
+                                <segue destination="Uin-kc-SDk" kind="presentation" identifier="AddCityScreenViewC" id="XY3-a6-xpJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -222,6 +226,7 @@ No data found...!</string>
         <!--Navigation Controller-->
         <scene sceneID="ian-J5-jDd">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XkB-SI-QzD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CY1-tr-w0r" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a5o-Az-m0X">
@@ -233,7 +238,6 @@ No data found...!</string>
                         <segue destination="S8d-sT-49G" kind="relationship" relationship="rootViewController" id="9SW-0V-pRb"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XkB-SI-QzD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1479" y="-464"/>
         </scene>
@@ -255,7 +259,7 @@ No data found...!</string>
                                 </connections>
                             </tableView>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hex-mx-3uG">
-                                <rect key="frame" x="130" y="366" width="133" height="110.33333333333331"/>
+                                <rect key="frame" x="130" y="370" width="133" height="102.33333333333331"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noDataFound" translatesAutoresizingMaskIntoConstraints="NO" id="fuo-U9-70A">
                                         <rect key="frame" x="36.666666666666657" y="0.0" width="60" height="60"/>
@@ -265,7 +269,7 @@ No data found...!</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0a-q8-2rv">
-                                        <rect key="frame" x="0.0" y="60" width="133" height="50.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="60" width="133" height="42.333333333333343"/>
                                         <string key="text">Uh oh...!
 No data found...!</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
