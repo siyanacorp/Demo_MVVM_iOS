@@ -35,6 +35,7 @@ extension AddCityScreenViewC: UITextFieldDelegate{
     // TODO: TEXT FIELD SHOULD CLEAR
     // Return true if the text should be cleared
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        self.addWeatherVM.cityName = String()
         return true
     }
     
