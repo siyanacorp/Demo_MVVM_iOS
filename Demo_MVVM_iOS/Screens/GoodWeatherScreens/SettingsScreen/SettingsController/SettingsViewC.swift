@@ -5,6 +5,7 @@
 //  Created by Jogender Singh on 13/02/24.
 //
 
+import Combine
 import UIKit
 /// SettingsViewC is a UIViewController subclass representing a settings view. It contains outlets for a table view and a stack view for displaying no data found message. The class implements the viewDidLoad method for initial setup and includes a deinitializer to handle cleanup.
 class SettingsViewC: UIViewController {
@@ -14,6 +15,8 @@ class SettingsViewC: UIViewController {
     
     // MARK: - PROPERTIES
     internal var settingsVM = SettingsVM()
+    internal var cancellables = Set<AnyCancellable>()
+    internal var callBackWeatherSettingChanged:(()->())?
     // MARK: - VIEW LIFE CYCLE METHODS
     // TODO: VIEW DID LOAD METHOD
     override func viewDidLoad() {
@@ -29,6 +32,7 @@ class SettingsViewC: UIViewController {
     // MARK: - ACTIONS
     // TODO: BUTTON DONE TAPPED
     @IBAction func buttonDone_Tapped(_ sender: UIButton) {
+        self.callBackWeatherSettingChanged?()
         self.dismiss(animated: true)
     }
 }

@@ -47,7 +47,16 @@ class GoodWeatherTableViewCell: UITableViewCell {
     internal func configure(with info: GoodWeatherVM?) {
         if let info = info {
             self.labelCityName.text = info.name
-            self.labelCityTemp.text = "\(info.tempC)° C"
+            
+            if let savedUnit = UserDefaults.standard.string(forKey: "selectedUnit"),
+               let unit = Unit(rawValue: savedUnit) {
+                switch unit {
+                case .celcius:
+                    self.labelCityTemp.text = "\(info.tempC)° Celcius"
+                case .fahrenheit:
+                    self.labelCityTemp.text = "\(info.tempF)° Fahrenheit"
+                }
+            }
         }
     }
 }

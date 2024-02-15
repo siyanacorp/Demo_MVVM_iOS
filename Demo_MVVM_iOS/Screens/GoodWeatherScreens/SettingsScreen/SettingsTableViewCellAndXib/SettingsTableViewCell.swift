@@ -28,10 +28,20 @@ class SettingsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    internal func configure(with info: Unit?) {
-        if let info = info {
-            self.imageViewCheck.isHidden = true
-            self.labelSettingName.text = info.displayName
+    /**
+     Configures the cell's UI based on the provided information about a unit.
+     
+     - Parameters:
+     - info: A tuple containing information about the unit and whether it's selected.
+     - unit: An optional `Unit` value representing the unit to display.
+     - isSelected: A Boolean indicating whether the unit is selected.
+     
+     - Note: If `unit` is provided, the cell's UI is updated to display the unit's name and adjust the visibility of the checkmark image based on the `isSelected` status.
+     */
+    internal func configure(with info: (unit: Unit?, isSelected: Bool)?) {
+        if let unit = info?.unit {
+            self.imageViewCheck.isHidden = !(info?.isSelected ?? Bool())
+            self.labelSettingName.text = unit.displayName
         }
     }
 }

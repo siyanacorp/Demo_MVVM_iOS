@@ -45,6 +45,26 @@ class GoodWeatherViewC: UIViewController {
                     
                 }
             }
+            
+        } else if segue.identifier == SettingsViewC.className {
+            guard let nav = segue.destination as? UINavigationController else {
+                fatalError("NO UINavigationController Found...!")
+            }
+            
+            guard let presentedVC = nav.viewControllers.first as? SettingsViewC else {
+                fatalError("NO SettingsViewC Found...!")
+            }
+            
+            presentedVC.callBackWeatherSettingChanged = { [weak self]in
+                guard let self = self else { return }
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    ToastManager.shared.showToast(message: AppText.shared.cityWeatherSettingChangedToast)
+                }
+            }
         }
     }
     

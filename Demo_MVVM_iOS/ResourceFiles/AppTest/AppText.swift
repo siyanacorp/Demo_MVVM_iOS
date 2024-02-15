@@ -29,5 +29,6 @@ final class AppText {
     internal let networkPassMessage: String = "✅ Valid Network."
     
     internal let cityWeatherAddedToast: String = "City's weather added in list successfully."
+    internal let cityWeatherSettingChangedToast: String = "City's weather setting changed successfully."
     internal let cityAddLoadingTitle: String = "Adding city..."
 }

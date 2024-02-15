@@ -25,7 +25,7 @@ extension SettingsViewC: UITableViewDataSource {
             fatalError("NO \(SettingsTableViewCell.className) found...!")
         }
         
-        cell.configure(with: self.settingsVM.units[indexPath.row])
+        cell.configure(with: self.settingsVM.settingAtIndex(indexPath.row))
         return cell
     }
 }
@@ -34,6 +34,11 @@ extension SettingsViewC: UITableViewDataSource {
 extension SettingsViewC: UITableViewDelegate {
     // TODO: DID SELECT ROW AT INDEXPATH
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let setting = settingsVM.settingAtIndex(indexPath.row) else {
+            return
+        }
         
+        // Change the selected unit
+        self.settingsVM.selectedUnit = setting.unit
     }
 }
