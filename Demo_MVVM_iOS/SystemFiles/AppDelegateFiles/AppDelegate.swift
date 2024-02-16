@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      - Parameter launchOptions: Application launch options Keys
      - Returns: A boolean value (true/false) to tell if application is launched successfully with options. */
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()
+        self.initialSetup()
         return true
     }
     

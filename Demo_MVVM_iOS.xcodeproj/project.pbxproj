@@ -62,6 +62,14 @@
 		9DDEDBFA2B77F3AF0036365F /* AppText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEDBF92B77F3AF0036365F /* AppText.swift */; };
 		9DDEDBFD2B77FEBA0036365F /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 9DDEDBFC2B77FEBA0036365F /* Toast */; };
 		9DDEDBFF2B77FF5C0036365F /* ToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEDBFE2B77FF5C0036365F /* ToastManager.swift */; };
+		9DF323222B7FCCF600781FD3 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9DF323212B7FCCF600781FD3 /* IQKeyboardManagerSwift */; };
+		9DF323242B7FCD4C00781FD3 /* AppDelegate+CustomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF323232B7FCD4C00781FD3 /* AppDelegate+CustomMethods.swift */; };
+		9DF323272B7FD39E00781FD3 /* Bindings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF323262B7FD39E00781FD3 /* Bindings.storyboard */; };
+		9DF323292B7FD4A000781FD3 /* ViewToViewModelViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF323282B7FD4A000781FD3 /* ViewToViewModelViewC.swift */; };
+		9DF3232B2B7FD56A00781FD3 /* ViewToViewModelViewC+CustomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF3232A2B7FD56A00781FD3 /* ViewToViewModelViewC+CustomMethods.swift */; };
+		9DF3232F2B7FDBC600781FD3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF3232E2B7FDBC600781FD3 /* LoginViewModel.swift */; };
+		9DF323322B7FDC2D00781FD3 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF323312B7FDC2D00781FD3 /* BindingTextField.swift */; };
+		9DF323342B7FE1B400781FD3 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF323332B7FE1B400781FD3 /* Dynamic.swift */; };
 		F2D2CDB933C968C84F790DD7 /* Pods_Demo_MVVM_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472D8222E9497010945C1EA7 /* Pods_Demo_MVVM_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -146,6 +154,13 @@
 		9DDEDBF62B77EDDB0036365F /* GlobalLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalLoader.swift; sourceTree = "<group>"; };
 		9DDEDBF92B77F3AF0036365F /* AppText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppText.swift; sourceTree = "<group>"; };
 		9DDEDBFE2B77FF5C0036365F /* ToastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastManager.swift; sourceTree = "<group>"; };
+		9DF323232B7FCD4C00781FD3 /* AppDelegate+CustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CustomMethods.swift"; sourceTree = "<group>"; };
+		9DF323262B7FD39E00781FD3 /* Bindings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bindings.storyboard; sourceTree = "<group>"; };
+		9DF323282B7FD4A000781FD3 /* ViewToViewModelViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewToViewModelViewC.swift; sourceTree = "<group>"; };
+		9DF3232A2B7FD56A00781FD3 /* ViewToViewModelViewC+CustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewToViewModelViewC+CustomMethods.swift"; sourceTree = "<group>"; };
+		9DF3232E2B7FDBC600781FD3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		9DF323312B7FDC2D00781FD3 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
+		9DF323332B7FE1B400781FD3 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF323222B7FCCF600781FD3 /* IQKeyboardManagerSwift in Frameworks */,
 				9DDEDBFD2B77FEBA0036365F /* Toast in Frameworks */,
 				9D6A20952B77904A00E67382 /* SDWebImage in Frameworks */,
 				9DDEDBF52B77EC560036365F /* SwiftLoader in Frameworks */,
@@ -293,7 +309,7 @@
 		8D8281A32B736CDA00603977 /* SystemFiles */ = {
 			isa = PBXGroup;
 			children = (
-				8D8281732B735C2300603977 /* AppDelegate.swift */,
+				9DF323252B7FCD5300781FD3 /* AppDelegateFiles */,
 				8D8281752B735C2300603977 /* SceneDelegate.swift */,
 				8D8281772B735C2300603977 /* ViewController.swift */,
 			);
@@ -307,6 +323,7 @@
 				8D8281792B735C2300603977 /* Main.storyboard */,
 				8D774CA72B79F3F20061569C /* SuperHeros.storyboard */,
 				8DE2DA772B7A01BF00915C6D /* GoodWeather.storyboard */,
+				9DF323262B7FD39E00781FD3 /* Bindings.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -410,6 +427,7 @@
 			children = (
 				9D9A53722B773BAA00D9DF70 /* MarvelSuperHeroListScreen */,
 				8DE2DA792B7A09BC00915C6D /* GoodWeatherScreens */,
+				9DF3231F2B7FC68000781FD3 /* ViewToModelBindingScreen */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -497,6 +515,51 @@
 			path = AppTest;
 			sourceTree = "<group>";
 		};
+		9DF3231F2B7FC68000781FD3 /* ViewToModelBindingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9DF323302B7FDBEA00781FD3 /* BindingTextField */,
+				9DF3232D2B7FDBB900781FD3 /* LoginViewModel */,
+				9DF3232C2B7FD5B500781FD3 /* ViewToViewModelViewController */,
+			);
+			path = ViewToModelBindingScreen;
+			sourceTree = "<group>";
+		};
+		9DF323252B7FCD5300781FD3 /* AppDelegateFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8D8281732B735C2300603977 /* AppDelegate.swift */,
+				9DF323232B7FCD4C00781FD3 /* AppDelegate+CustomMethods.swift */,
+			);
+			path = AppDelegateFiles;
+			sourceTree = "<group>";
+		};
+		9DF3232C2B7FD5B500781FD3 /* ViewToViewModelViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9DF323282B7FD4A000781FD3 /* ViewToViewModelViewC.swift */,
+				9DF3232A2B7FD56A00781FD3 /* ViewToViewModelViewC+CustomMethods.swift */,
+			);
+			path = ViewToViewModelViewController;
+			sourceTree = "<group>";
+		};
+		9DF3232D2B7FDBB900781FD3 /* LoginViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9DF323332B7FE1B400781FD3 /* Dynamic.swift */,
+				9DF3232E2B7FDBC600781FD3 /* LoginViewModel.swift */,
+			);
+			path = LoginViewModel;
+			sourceTree = "<group>";
+		};
+		9DF323302B7FDBEA00781FD3 /* BindingTextField */ = {
+			isa = PBXGroup;
+			children = (
+				9DF323312B7FDC2D00781FD3 /* BindingTextField.swift */,
+			);
+			path = BindingTextField;
+			sourceTree = "<group>";
+		};
 		C4A33B8EEA4E2CBBC566AACD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -544,6 +607,7 @@
 				9D6A20942B77904A00E67382 /* SDWebImage */,
 				9DDEDBF42B77EC560036365F /* SwiftLoader */,
 				9DDEDBFC2B77FEBA0036365F /* Toast */,
+				9DF323212B7FCCF600781FD3 /* IQKeyboardManagerSwift */,
 			);
 			productName = Demo_MVVM_iOS;
 			productReference = 8D8281702B735C2300603977 /* Demo_MVVM_iOS.app */;
@@ -624,6 +688,7 @@
 				9D6A20932B77904A00E67382 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				9DDEDBF32B77EC560036365F /* XCRemoteSwiftPackageReference "SwiftLoader" */,
 				9DDEDBFB2B77FEBA0036365F /* XCRemoteSwiftPackageReference "toast-swift" */,
+				9DF323202B7FCCF600781FD3 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 8D8281712B735C2300603977 /* Products */;
 			projectDirPath = "";
@@ -645,6 +710,7 @@
 				9D9A537C2B773DDE00D9DF70 /* MarvelSuperHeroTableViewCell.xib in Resources */,
 				8DE2DA782B7A01BF00915C6D /* GoodWeather.storyboard in Resources */,
 				9DAB55F92B7BDBCD00E28242 /* SettingsTableViewCell.xib in Resources */,
+				9DF323272B7FD39E00781FD3 /* Bindings.storyboard in Resources */,
 				8D774CA82B79F3F20061569C /* SuperHeros.storyboard in Resources */,
 				9D9CE2F92B75E4A400B1118C /* GoogleService-Info.plist in Resources */,
 				8D5957822B7B4D97005388D8 /* GoodWeatherTableViewCell.xib in Resources */,
@@ -821,6 +887,7 @@
 				9D37C99F2B7BFBB0000E5073 /* GoodWeatherModel.swift in Sources */,
 				9D9A53592B76AE5500D9DF70 /* DataError.swift in Sources */,
 				8D5957892B7B620D005388D8 /* SettingsViewC+CutomMethods.swift in Sources */,
+				9DF323322B7FDC2D00781FD3 /* BindingTextField.swift in Sources */,
 				9D9A53742B773BF300D9DF70 /* MarvelSuperHeroListViewC.swift in Sources */,
 				9D9A53822B774B3400D9DF70 /* HttpMethod.swift in Sources */,
 				9DDEDBF22B77E4F50036365F /* String+Extension.swift in Sources */,
@@ -830,17 +897,22 @@
 				9DAE3A3C2B7D1611009C9569 /* GoodWeatherListVM.swift in Sources */,
 				9D9A53562B76A84500D9DF70 /* WebServiceManager.swift in Sources */,
 				9DAB55F82B7BDBCD00E28242 /* SettingsTableViewCell.swift in Sources */,
+				9DF323292B7FD4A000781FD3 /* ViewToViewModelViewC.swift in Sources */,
 				9D9A536B2B76C9A700D9DF70 /* UIView+Extension.swift in Sources */,
 				9D9A536F2B76D04300D9DF70 /* NSObject+Extension.swift in Sources */,
 				8D8281782B735C2300603977 /* ViewController.swift in Sources */,
 				9D9A53862B7751A000D9DF70 /* Reachability.swift in Sources */,
+				9DF3232B2B7FD56A00781FD3 /* ViewToViewModelViewC+CustomMethods.swift in Sources */,
 				8D850E1C2B7775C500880B1D /* MarvelSuperHeroListViewC+TableView.swift in Sources */,
+				9DF3232F2B7FDBC600781FD3 /* LoginViewModel.swift in Sources */,
 				8D59578B2B7B624A005388D8 /* SettingsViewC+TableView.swift in Sources */,
 				8D0272AD2B7DF5DF00B2205E /* SettingsVM.swift in Sources */,
 				9D9A53892B77564B00D9DF70 /* MarvelSuperHeroVM.swift in Sources */,
 				9D9A537B2B773DDE00D9DF70 /* MarvelSuperHeroTableViewCell.swift in Sources */,
+				9DF323242B7FCD4C00781FD3 /* AppDelegate+CustomMethods.swift in Sources */,
 				9D6A20972B77A53A00E67382 /* UIImageView+Extension.swift in Sources */,
 				8D5957872B7B61DD005388D8 /* SettingsViewC.swift in Sources */,
+				9DF323342B7FE1B400781FD3 /* Dynamic.swift in Sources */,
 				8D5957352B7B325A005388D8 /* GoodWeatherViewC+TableView.swift in Sources */,
 				9D9A53762B773C1800D9DF70 /* MarvelSuperHeroListViewC+CustomMethods.swift in Sources */,
 				9D9A536D2B76CEB100D9DF70 /* UITableView+Extension.swift in Sources */,
@@ -1232,6 +1304,14 @@
 				minimumVersion = 2.1.2;
 			};
 		};
+		9DF323202B7FCCF600781FD3 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1249,6 +1329,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9DDEDBFB2B77FEBA0036365F /* XCRemoteSwiftPackageReference "toast-swift" */;
 			productName = Toast;
+		};
+		9DF323212B7FCCF600781FD3 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DF323202B7FCCF600781FD3 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
