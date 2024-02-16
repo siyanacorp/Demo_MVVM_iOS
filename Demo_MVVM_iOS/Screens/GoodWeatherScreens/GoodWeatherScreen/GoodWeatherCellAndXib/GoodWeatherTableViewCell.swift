@@ -52,9 +52,9 @@ class GoodWeatherTableViewCell: UITableViewCell {
                let unit = Unit(rawValue: savedUnit) {
                 switch unit {
                 case .celcius:
-                    self.labelCityTemp.text = "\(info.tempC)° Celcius"
+                    self.labelCityTemp.text = "\(info.tempC)° C"
                 case .fahrenheit:
-                    self.labelCityTemp.text = "\(info.tempF)° Fahrenheit"
+                    self.labelCityTemp.text = "\(info.tempF)° F"
                 }
             }
         }
