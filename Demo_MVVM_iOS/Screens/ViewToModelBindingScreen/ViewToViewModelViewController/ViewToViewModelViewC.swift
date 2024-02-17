@@ -33,10 +33,10 @@ class ViewToViewModelViewC: UIViewController {
     // MARK: - ACTIONS
     // TODO: BUTTON LOGIN TAPPED
     @IBAction func buttonLogin_Tapped(_ sender: UIButton) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
+       /* DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
             guard let self = self else { return }
             self.loginVM.username.value = "marydoe"
             self.loginVM.password.value = "password"
-        }
+        } */
     }
 }

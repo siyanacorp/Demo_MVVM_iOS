@@ -11,7 +11,6 @@ final class AppText {
     /// Singleton instance of AppText.
     static let shared = AppText()
     
-    internal let appName: String = "Demo MVVM iOS"
     internal let loadingTitle: String = "Loading..."
     internal let invalidResponseMessage: String = "🛑 Invalid response received."
     internal let invalidURLMessage: String = "🛑 Invalid URL."
@@ -28,6 +27,8 @@ final class AppText {
     internal let connectivityPassMessage: String = "✅ Valid Connectivity."
     internal let networkPassMessage: String = "✅ Valid Network."
     
+    // APP SPECIFIC
+    internal let appName: String = "Demo MVVM iOS"
     internal let cityWeatherAddedToast: String = "City's weather added in list successfully."
     internal let cityWeatherSettingChangedToast: String = "City's weather setting changed successfully."
     internal let cityAddLoadingTitle: String = "Adding city..."

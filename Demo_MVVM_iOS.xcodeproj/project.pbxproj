@@ -418,6 +418,7 @@
 				9D9A53552B76A84500D9DF70 /* WebServiceManager.swift */,
 				9DDEDBF62B77EDDB0036365F /* GlobalLoader.swift */,
 				9DDEDBFE2B77FF5C0036365F /* ToastManager.swift */,
+				9DF323332B7FE1B400781FD3 /* Dynamic.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -546,7 +547,6 @@
 		9DF3232D2B7FDBB900781FD3 /* LoginViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				9DF323332B7FE1B400781FD3 /* Dynamic.swift */,
 				9DF3232E2B7FDBC600781FD3 /* LoginViewModel.swift */,
 			);
 			path = LoginViewModel;
