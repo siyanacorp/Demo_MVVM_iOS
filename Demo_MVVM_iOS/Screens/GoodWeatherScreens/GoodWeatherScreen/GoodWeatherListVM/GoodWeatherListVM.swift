@@ -21,7 +21,6 @@ class GoodWeatherListVM: ObservableObject {
     func addWeather(cityWeather: GoodWeatherVM) {
         self.allCitiesWeather.append(cityWeather)
     }
-    
 }
 
 extension GoodWeatherListVM {

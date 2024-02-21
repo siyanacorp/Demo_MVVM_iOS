@@ -23,10 +23,11 @@
 		8D82817B2B735C2300603977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8281792B735C2300603977 /* Main.storyboard */; };
 		8D82817D2B735C2500603977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D82817C2B735C2500603977 /* Assets.xcassets */; };
 		8D8281802B735C2500603977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D82817E2B735C2500603977 /* LaunchScreen.storyboard */; };
-		8D82818B2B735C2500603977 /* Demo_MVVM_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82818A2B735C2500603977 /* Demo_MVVM_iOSTests.swift */; };
 		8D8281952B735C2500603977 /* Demo_MVVM_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8281942B735C2500603977 /* Demo_MVVM_iOSUITests.swift */; };
 		8D8281972B735C2500603977 /* Demo_MVVM_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8281962B735C2500603977 /* Demo_MVVM_iOSUITestsLaunchTests.swift */; };
 		8D850E1C2B7775C500880B1D /* MarvelSuperHeroListViewC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D850E1B2B7775C500880B1D /* MarvelSuperHeroListViewC+TableView.swift */; };
+		8D8D46FC2B82FAC900628761 /* SettingsVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D46FB2B82FAC900628761 /* SettingsVMTests.swift */; };
+		8D8D46FE2B8301C400628761 /* GoodWeatherListVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D46FD2B8301C400628761 /* GoodWeatherListVMTests.swift */; };
 		8D8E435C2B7A0EA500AB7FB1 /* AddCityScreenViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E435B2B7A0EA500AB7FB1 /* AddCityScreenViewC.swift */; };
 		8D8E435E2B7A0EFB00AB7FB1 /* AddCityScreenViewC+CustomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E435D2B7A0EFB00AB7FB1 /* AddCityScreenViewC+CustomMethods.swift */; };
 		8DE2DA782B7A01BF00915C6D /* GoodWeather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE2DA772B7A01BF00915C6D /* GoodWeather.storyboard */; };
@@ -115,11 +116,12 @@
 		8D82817F2B735C2500603977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D8281812B735C2500603977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D8281862B735C2500603977 /* Demo_MVVM_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Demo_MVVM_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D82818A2B735C2500603977 /* Demo_MVVM_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_MVVM_iOSTests.swift; sourceTree = "<group>"; };
 		8D8281902B735C2500603977 /* Demo_MVVM_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Demo_MVVM_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8281942B735C2500603977 /* Demo_MVVM_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_MVVM_iOSUITests.swift; sourceTree = "<group>"; };
 		8D8281962B735C2500603977 /* Demo_MVVM_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_MVVM_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8D850E1B2B7775C500880B1D /* MarvelSuperHeroListViewC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarvelSuperHeroListViewC+TableView.swift"; sourceTree = "<group>"; };
+		8D8D46FB2B82FAC900628761 /* SettingsVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVMTests.swift; sourceTree = "<group>"; };
+		8D8D46FD2B8301C400628761 /* GoodWeatherListVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherListVMTests.swift; sourceTree = "<group>"; };
 		8D8E435B2B7A0EA500AB7FB1 /* AddCityScreenViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityScreenViewC.swift; sourceTree = "<group>"; };
 		8D8E435D2B7A0EFB00AB7FB1 /* AddCityScreenViewC+CustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddCityScreenViewC+CustomMethods.swift"; sourceTree = "<group>"; };
 		8DE2DA772B7A01BF00915C6D /* GoodWeather.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoodWeather.storyboard; sourceTree = "<group>"; };
@@ -292,7 +294,8 @@
 		8D8281892B735C2500603977 /* Demo_MVVM_iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				8D82818A2B735C2500603977 /* Demo_MVVM_iOSTests.swift */,
+				8D8D46FB2B82FAC900628761 /* SettingsVMTests.swift */,
+				8D8D46FD2B8301C400628761 /* GoodWeatherListVMTests.swift */,
 			);
 			path = Demo_MVVM_iOSTests;
 			sourceTree = "<group>";
@@ -934,7 +937,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D82818B2B735C2500603977 /* Demo_MVVM_iOSTests.swift in Sources */,
+				8D8D46FE2B8301C400628761 /* GoodWeatherListVMTests.swift in Sources */,
+				8D8D46FC2B82FAC900628761 /* SettingsVMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
