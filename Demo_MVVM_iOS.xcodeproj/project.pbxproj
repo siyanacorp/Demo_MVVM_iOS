@@ -33,6 +33,7 @@
 		8DE2DA782B7A01BF00915C6D /* GoodWeather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE2DA772B7A01BF00915C6D /* GoodWeather.storyboard */; };
 		8DE2DA7C2B7A0A1500915C6D /* GoodWeatherViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2DA7B2B7A0A1500915C6D /* GoodWeatherViewC.swift */; };
 		8DE2DA7E2B7A0B8500915C6D /* GoodWeatherViewC+CustomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2DA7D2B7A0B8500915C6D /* GoodWeatherViewC+CustomMethods.swift */; };
+		8DF082AE2B8EFE3100A4BE9F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DF082AD2B8EFE3100A4BE9F /* GoogleService-Info.plist */; };
 		9D37C99F2B7BFBB0000E5073 /* GoodWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37C99E2B7BFBB0000E5073 /* GoodWeatherModel.swift */; };
 		9D37C9A22B7C00F7000E5073 /* AddWeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37C9A12B7C00F7000E5073 /* AddWeatherVM.swift */; };
 		9D37C9A52B7C012A000E5073 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37C9A42B7C012A000E5073 /* Constants.swift */; };
@@ -52,7 +53,6 @@
 		9D9A53842B774D5D00D9DF70 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53832B774D5C00D9DF70 /* Resource.swift */; };
 		9D9A53862B7751A000D9DF70 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53852B7751A000D9DF70 /* Reachability.swift */; };
 		9D9A53892B77564B00D9DF70 /* MarvelSuperHeroVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53882B77564B00D9DF70 /* MarvelSuperHeroVM.swift */; };
-		9D9CE2F92B75E4A400B1118C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D9CE2F82B75E4A400B1118C /* GoogleService-Info.plist */; };
 		9DAB55F82B7BDBCD00E28242 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAB55F62B7BDBCD00E28242 /* SettingsTableViewCell.swift */; };
 		9DAB55F92B7BDBCD00E28242 /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DAB55F72B7BDBCD00E28242 /* SettingsTableViewCell.xib */; };
 		9DAE3A3C2B7D1611009C9569 /* GoodWeatherListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAE3A3B2B7D1611009C9569 /* GoodWeatherListVM.swift */; };
@@ -127,6 +127,7 @@
 		8DE2DA772B7A01BF00915C6D /* GoodWeather.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoodWeather.storyboard; sourceTree = "<group>"; };
 		8DE2DA7B2B7A0A1500915C6D /* GoodWeatherViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherViewC.swift; sourceTree = "<group>"; };
 		8DE2DA7D2B7A0B8500915C6D /* GoodWeatherViewC+CustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoodWeatherViewC+CustomMethods.swift"; sourceTree = "<group>"; };
+		8DF082AD2B8EFE3100A4BE9F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92FA5D4245B2B31426B74BE5 /* Pods_Demo_MVVM_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_MVVM_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC377C312B06EE58CEAF59B /* Pods-Demo_MVVM_iOS-Demo_MVVM_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_MVVM_iOS-Demo_MVVM_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Demo_MVVM_iOS-Demo_MVVM_iOSUITests/Pods-Demo_MVVM_iOS-Demo_MVVM_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D37C99E2B7BFBB0000E5073 /* GoodWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherModel.swift; sourceTree = "<group>"; };
@@ -147,7 +148,6 @@
 		9D9A53832B774D5C00D9DF70 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		9D9A53852B7751A000D9DF70 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		9D9A53882B77564B00D9DF70 /* MarvelSuperHeroVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelSuperHeroVM.swift; sourceTree = "<group>"; };
-		9D9CE2F82B75E4A400B1118C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9DAB55F62B7BDBCD00E28242 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		9DAB55F72B7BDBCD00E28242 /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
 		9DAE3A3B2B7D1611009C9569 /* GoodWeatherListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherListVM.swift; sourceTree = "<group>"; };
@@ -286,7 +286,7 @@
 				9D9A535A2B76B26500D9DF70 /* Screens */,
 				8D8281A62B736CFE00603977 /* ResourceFiles */,
 				8D8281812B735C2500603977 /* Info.plist */,
-				9D9CE2F82B75E4A400B1118C /* GoogleService-Info.plist */,
+				8DF082AD2B8EFE3100A4BE9F /* GoogleService-Info.plist */,
 			);
 			path = Demo_MVVM_iOS;
 			sourceTree = "<group>";
@@ -715,8 +715,8 @@
 				9DAB55F92B7BDBCD00E28242 /* SettingsTableViewCell.xib in Resources */,
 				9DF323272B7FD39E00781FD3 /* Bindings.storyboard in Resources */,
 				8D774CA82B79F3F20061569C /* SuperHeros.storyboard in Resources */,
-				9D9CE2F92B75E4A400B1118C /* GoogleService-Info.plist in Resources */,
 				8D5957822B7B4D97005388D8 /* GoodWeatherTableViewCell.xib in Resources */,
+				8DF082AE2B8EFE3100A4BE9F /* GoogleService-Info.plist in Resources */,
 				8D82817D2B735C2500603977 /* Assets.xcassets in Resources */,
 				8D82817B2B735C2300603977 /* Main.storyboard in Resources */,
 			);
