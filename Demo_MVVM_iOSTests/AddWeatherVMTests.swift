@@ -15,11 +15,11 @@ class AddWeatherVMTests: XCTestCase {
     var cancellables: Set<AnyCancellable> = []
     
     override func setUpWithError() throws {
-        viewModel = AddWeatherVM()
+        self.viewModel = AddWeatherVM()
     }
     
     override func tearDownWithError() throws {
-        viewModel = nil
+        self.viewModel = nil
         cancellables = []
     }
     

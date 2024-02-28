@@ -18,15 +18,15 @@ struct Location {
 
 class GoodWeatherListVMTests: XCTestCase {
     
-    var weatherListVM: GoodWeatherListVM!
+    var weatherListVM: GoodWeatherListVM?
     
     override func setUp() {
         super.setUp()
-        weatherListVM = GoodWeatherListVM()
+        self.weatherListVM = GoodWeatherListVM()
     }
     
     override func tearDown() {
-        weatherListVM = nil
+        self.weatherListVM = nil
         super.tearDown()
     }
     
@@ -37,8 +37,7 @@ class GoodWeatherListVMTests: XCTestCase {
 
     
     func testWeatherListEmpty() {
-        let isWeatherListEmpty = weatherListVM.weatherListEmpty()
-        
+        let isWeatherListEmpty = self.weatherListVM?.weatherListEmpty() ?? Bool()
         XCTAssertTrue(isWeatherListEmpty, "Weather list should be empty initially")
     }
 }

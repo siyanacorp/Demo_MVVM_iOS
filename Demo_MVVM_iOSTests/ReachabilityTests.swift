@@ -11,6 +11,11 @@ import Network
 
 class ReachabilityTests: XCTestCase {
     
+    // SetUp function for setup class before test
+    override class func setUp() {
+        super.setUp()
+    }
+    
     // Test case to check internet connectivity when device is connected.
     func testInternetConnectivityWhenConnected() {
         // Given
@@ -57,5 +62,10 @@ class ReachabilityTests: XCTestCase {
         
         // Then
         XCTAssertFalse(isConnected, "Internet connectivity should be false when device is disconnected.")
+    }
+    
+    // Tear down function for end all instance class after test
+    override class func tearDown() {
+        super.tearDown()
     }
 }

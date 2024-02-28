@@ -10,14 +10,16 @@ import XCTest
 
 class MarvelSuperHeroListVMTests: XCTestCase {
     
-    var viewModel: MarvelSuperHeroListVM!
+    var viewModel: MarvelSuperHeroListVM?
 
     override func setUpWithError() throws {
-        viewModel = MarvelSuperHeroListVM()
+        try super.setUpWithError()
+        self.viewModel = MarvelSuperHeroListVM()
     }
 
     override func tearDownWithError() throws {
-        viewModel = nil
+        try super.tearDownWithError()
+        self.viewModel = nil
     }
 
     @MainActor func testFetchSuperHeros() {
@@ -25,11 +27,11 @@ class MarvelSuperHeroListVMTests: XCTestCase {
         let expectation = expectation(description: "Fetch superheroes")
         
         // When
-        viewModel.fetchSuperHeros()
+        self.viewModel?.fetchSuperHeros()
         
         // Then
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            XCTAssertNotNil(self.viewModel.superHeros, "Superheroes should not be nil after fetching")
+            XCTAssertNotNil(self.viewModel?.superHeros, "Superheroes should not be nil after fetching")
             expectation.fulfill()
         }
         

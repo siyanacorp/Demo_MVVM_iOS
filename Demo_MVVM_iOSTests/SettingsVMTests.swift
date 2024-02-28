@@ -9,33 +9,33 @@ import XCTest
 @testable import Demo_MVVM_iOS
 
 class SettingsVMTests: XCTestCase {
-    var settingsVM: SettingsVM!
+    var settingsVM: SettingsVM?
     
     override func setUp() {
         super.setUp()
-        settingsVM = SettingsVM()
+        self.settingsVM = SettingsVM()
         // Ensure default unit is set to Celcius for each test case
-        settingsVM.selectedUnit = .celcius
+        self.settingsVM?.selectedUnit = .celcius
     }
     
     override func tearDown() {
-        settingsVM = nil
+        self.settingsVM = nil
         super.tearDown()
     }
     
     func testDefaultSelectedUnit() {
-        XCTAssertEqual(settingsVM.selectedUnit, Unit.celcius)
+        XCTAssertEqual(self.settingsVM?.selectedUnit, Unit.celcius)
     }
     
     func testChangingSelectedUnit() {
-        settingsVM.selectedUnit = .fahrenheit
-        XCTAssertEqual(settingsVM.selectedUnit, Unit.fahrenheit)
+        self.settingsVM?.selectedUnit = .fahrenheit
+        XCTAssertEqual(self.settingsVM?.selectedUnit, Unit.fahrenheit)
     }
     
     func testInitialValueOfSelectedUnitPublisher() {
         let expectation = XCTestExpectation(description: "Initial value of selected unit publisher expectation")
         
-        let cancellable = settingsVM.selectedUnitPublisher
+        let cancellable = self.settingsVM?.selectedUnitPublisher
             .sink { unit in
                 XCTAssertEqual(unit, Unit.celcius)
                 expectation.fulfill()
@@ -43,46 +43,46 @@ class SettingsVMTests: XCTestCase {
         
         wait(for: [expectation], timeout: 1.0)
         
-        cancellable.cancel()
+        cancellable?.cancel()
     }
 
     func testSelectedUnitPublisher() {
         // Initialize settingsVM with initial value .fahrenheit
-        settingsVM.selectedUnit = .fahrenheit
+        self.settingsVM?.selectedUnit = .fahrenheit
         
         let expectation = XCTestExpectation(description: "Unit publisher expectation")
         
-        let cancellable = settingsVM.selectedUnitPublisher
+        let cancellable = self.settingsVM?.selectedUnitPublisher
             .sink { unit in
                 XCTAssertEqual(unit, Unit.fahrenheit)
                 expectation.fulfill()
             }
         
-        settingsVM.selectedUnit = .fahrenheit
+        self.settingsVM?.selectedUnit = .fahrenheit
         
         wait(for: [expectation], timeout: 1.0)
         
-        cancellable.cancel()
+        cancellable?.cancel()
     }
 
 
     
     func testNumberOfSections() {
-        XCTAssertEqual(settingsVM.numberOfSections, 1)
+        XCTAssertEqual(self.settingsVM?.numberOfSections, 1)
     }
     
     func testNumberOfRowsInSection() {
-        XCTAssertEqual(settingsVM.numberOfRowsInSection(0), Unit.allCases.count)
+        XCTAssertEqual(self.settingsVM?.numberOfRowsInSection(0), Unit.allCases.count)
     }
     
     func testSettingAtIndex() {
-        let setting = settingsVM.settingAtIndex(0)
+        let setting = self.settingsVM?.settingAtIndex(0)
         XCTAssertNotNil(setting)
         XCTAssertEqual(setting?.unit, Unit.celcius)
         XCTAssertTrue(setting?.isSelected ?? false)
     }
     
     func testSettingListEmpty() {
-        XCTAssertFalse(settingsVM.settingListEmpty())
+        XCTAssertFalse(self.settingsVM?.settingListEmpty() ?? Bool())
     }
 }

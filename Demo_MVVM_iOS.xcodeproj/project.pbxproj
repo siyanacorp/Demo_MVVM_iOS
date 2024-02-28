@@ -43,6 +43,13 @@
 		9D37C9A52B7C012A000E5073 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37C9A42B7C012A000E5073 /* Constants.swift */; };
 		9D6A20952B77904A00E67382 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9D6A20942B77904A00E67382 /* SDWebImage */; };
 		9D6A20972B77A53A00E67382 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A20962B77A53A00E67382 /* UIImageView+Extension.swift */; };
+		9D9150272B8FC34A00BC1091 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53552B76A84500D9DF70 /* WebServiceManager.swift */; };
+		9D9150282B8FC3BA00BC1091 /* MarvelSuperHeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A537F2B7742FC00D9DF70 /* MarvelSuperHeroModel.swift */; };
+		9D9150292B8FC40400BC1091 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53832B774D5C00D9DF70 /* Resource.swift */; };
+		9D91502A2B8FC42800BC1091 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53812B774B3400D9DF70 /* HttpMethod.swift */; };
+		9D91502B2B8FC47500BC1091 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53582B76AE5500D9DF70 /* DataError.swift */; };
+		9D91502C2B8FC8A100BC1091 /* AppText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEDBF92B77F3AF0036365F /* AppText.swift */; };
+		9D91502D2B8FCCC600BC1091 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53852B7751A000D9DF70 /* Reachability.swift */; };
 		9D9A53562B76A84500D9DF70 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53552B76A84500D9DF70 /* WebServiceManager.swift */; };
 		9D9A53592B76AE5500D9DF70 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53582B76AE5500D9DF70 /* DataError.swift */; };
 		9D9A536B2B76C9A700D9DF70 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A536A2B76C9A700D9DF70 /* UIView+Extension.swift */; };
@@ -949,12 +956,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D9150292B8FC40400BC1091 /* Resource.swift in Sources */,
 				8DF082B22B8F089000A4BE9F /* WebServiceManagerTests.swift in Sources */,
+				9D91502C2B8FC8A100BC1091 /* AppText.swift in Sources */,
+				9D91502A2B8FC42800BC1091 /* HttpMethod.swift in Sources */,
+				9D9150272B8FC34A00BC1091 /* WebServiceManager.swift in Sources */,
+				9D9150282B8FC3BA00BC1091 /* MarvelSuperHeroModel.swift in Sources */,
 				8DF082B62B8F1F8500A4BE9F /* AddWeatherVMTests.swift in Sources */,
 				8DF082B42B8F182300A4BE9F /* MarvelSuperHeroListVMTests.swift in Sources */,
 				8D8D46FE2B8301C400628761 /* GoodWeatherListVMTests.swift in Sources */,
+				9D91502B2B8FC47500BC1091 /* DataError.swift in Sources */,
 				8DF082B02B8EFFF000A4BE9F /* ReachabilityTests.swift in Sources */,
 				8D8D46FC2B82FAC900628761 /* SettingsVMTests.swift in Sources */,
+				9D91502D2B8FCCC600BC1091 /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
