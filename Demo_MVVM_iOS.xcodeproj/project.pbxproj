@@ -34,6 +34,10 @@
 		8DE2DA7C2B7A0A1500915C6D /* GoodWeatherViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2DA7B2B7A0A1500915C6D /* GoodWeatherViewC.swift */; };
 		8DE2DA7E2B7A0B8500915C6D /* GoodWeatherViewC+CustomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2DA7D2B7A0B8500915C6D /* GoodWeatherViewC+CustomMethods.swift */; };
 		8DF082AE2B8EFE3100A4BE9F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DF082AD2B8EFE3100A4BE9F /* GoogleService-Info.plist */; };
+		8DF082B02B8EFFF000A4BE9F /* ReachabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF082AF2B8EFFF000A4BE9F /* ReachabilityTests.swift */; };
+		8DF082B22B8F089000A4BE9F /* WebServiceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF082B12B8F089000A4BE9F /* WebServiceManagerTests.swift */; };
+		8DF082B42B8F182300A4BE9F /* MarvelSuperHeroListVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF082B32B8F182300A4BE9F /* MarvelSuperHeroListVMTests.swift */; };
+		8DF082B62B8F1F8500A4BE9F /* AddWeatherVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF082B52B8F1F8500A4BE9F /* AddWeatherVMTests.swift */; };
 		9D37C99F2B7BFBB0000E5073 /* GoodWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37C99E2B7BFBB0000E5073 /* GoodWeatherModel.swift */; };
 		9D37C9A22B7C00F7000E5073 /* AddWeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37C9A12B7C00F7000E5073 /* AddWeatherVM.swift */; };
 		9D37C9A52B7C012A000E5073 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37C9A42B7C012A000E5073 /* Constants.swift */; };
@@ -128,6 +132,10 @@
 		8DE2DA7B2B7A0A1500915C6D /* GoodWeatherViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherViewC.swift; sourceTree = "<group>"; };
 		8DE2DA7D2B7A0B8500915C6D /* GoodWeatherViewC+CustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoodWeatherViewC+CustomMethods.swift"; sourceTree = "<group>"; };
 		8DF082AD2B8EFE3100A4BE9F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8DF082AF2B8EFFF000A4BE9F /* ReachabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityTests.swift; sourceTree = "<group>"; };
+		8DF082B12B8F089000A4BE9F /* WebServiceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManagerTests.swift; sourceTree = "<group>"; };
+		8DF082B32B8F182300A4BE9F /* MarvelSuperHeroListVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelSuperHeroListVMTests.swift; sourceTree = "<group>"; };
+		8DF082B52B8F1F8500A4BE9F /* AddWeatherVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeatherVMTests.swift; sourceTree = "<group>"; };
 		92FA5D4245B2B31426B74BE5 /* Pods_Demo_MVVM_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_MVVM_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC377C312B06EE58CEAF59B /* Pods-Demo_MVVM_iOS-Demo_MVVM_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_MVVM_iOS-Demo_MVVM_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Demo_MVVM_iOS-Demo_MVVM_iOSUITests/Pods-Demo_MVVM_iOS-Demo_MVVM_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D37C99E2B7BFBB0000E5073 /* GoodWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherModel.swift; sourceTree = "<group>"; };
@@ -294,8 +302,12 @@
 		8D8281892B735C2500603977 /* Demo_MVVM_iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				8DF082AF2B8EFFF000A4BE9F /* ReachabilityTests.swift */,
+				8DF082B12B8F089000A4BE9F /* WebServiceManagerTests.swift */,
+				8DF082B32B8F182300A4BE9F /* MarvelSuperHeroListVMTests.swift */,
 				8D8D46FB2B82FAC900628761 /* SettingsVMTests.swift */,
 				8D8D46FD2B8301C400628761 /* GoodWeatherListVMTests.swift */,
+				8DF082B52B8F1F8500A4BE9F /* AddWeatherVMTests.swift */,
 			);
 			path = Demo_MVVM_iOSTests;
 			sourceTree = "<group>";
@@ -937,7 +949,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF082B22B8F089000A4BE9F /* WebServiceManagerTests.swift in Sources */,
+				8DF082B62B8F1F8500A4BE9F /* AddWeatherVMTests.swift in Sources */,
+				8DF082B42B8F182300A4BE9F /* MarvelSuperHeroListVMTests.swift in Sources */,
 				8D8D46FE2B8301C400628761 /* GoodWeatherListVMTests.swift in Sources */,
+				8DF082B02B8EFFF000A4BE9F /* ReachabilityTests.swift in Sources */,
 				8D8D46FC2B82FAC900628761 /* SettingsVMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

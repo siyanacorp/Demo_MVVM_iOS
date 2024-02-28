@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct MarvelSuperHeroModel: Codable {
+struct MarvelSuperHeroModel: Codable ,Equatable{
     let bio: String?
     let createdby: String?
     let firstappearance: String?

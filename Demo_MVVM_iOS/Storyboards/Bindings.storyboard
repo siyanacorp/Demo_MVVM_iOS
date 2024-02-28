@@ -149,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="931" y="-2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ne2-pb-OqU">
@@ -172,10 +172,10 @@
     </scenes>
     <designables>
         <designable name="drG-bf-aFo">
-            <size key="intrinsicContentSize" width="124.33333333333333" height="22"/>
+            <size key="intrinsicContentSize" width="124.33333333333333" height="26"/>
         </designable>
         <designable name="yNV-QK-wjf">
-            <size key="intrinsicContentSize" width="118" height="21"/>
+            <size key="intrinsicContentSize" width="118" height="25"/>
         </designable>
     </designables>
     <resources>

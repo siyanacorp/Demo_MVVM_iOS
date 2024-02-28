@@ -36,6 +36,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8D82816F2B735C2300603977"
+            BuildableName = "Demo_MVVM_iOS.app"
+            BlueprintName = "Demo_MVVM_iOS"
+            ReferencedContainer = "container:Demo_MVVM_iOS.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -43,6 +53,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8D82816F2B735C2300603977"
+            BuildableName = "Demo_MVVM_iOS.app"
+            BlueprintName = "Demo_MVVM_iOS"
+            ReferencedContainer = "container:Demo_MVVM_iOS.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
