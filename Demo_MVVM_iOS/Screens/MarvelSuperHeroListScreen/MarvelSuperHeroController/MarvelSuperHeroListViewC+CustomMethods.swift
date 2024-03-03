@@ -14,12 +14,15 @@ extension MarvelSuperHeroListViewC {
      Performs initial setup for the class.
      */
     internal func initialSetup() {
-        self.tableView.registerNibCell(MarvelSuperHeroTableViewCell.self, fromNibWithName: MarvelSuperHeroTableViewCell.className)
+        guard let tableView = tableView else {
+            return
+        }
+        tableView.registerNibCell(MarvelSuperHeroTableViewCell.self, fromNibWithName: MarvelSuperHeroTableViewCell.className)
         
         if #available(iOS 10.0, *) {
-            self.tableView.refreshControl = self.refreshControl
+            tableView.refreshControl = self.refreshControl
         } else {
-            self.tableView.addSubview(self.refreshControl)
+            tableView.addSubview(self.refreshControl)
         }
         
         // Configure the refresh control
@@ -43,14 +46,17 @@ extension MarvelSuperHeroListViewC {
      
      - Requires: `superHeroVM` to be properly initialized and configured with appropriate publishers.
      */
-    private func handleCombinePublishers() {
+    internal func handleCombinePublishers() {
         self.superHeroVM.superHerosPublisher
             .sink { [weak self] _ in
                 // Handle changes to the superHeros array here
                 // Update UI or perform any other actions
                 guard let self = self else { return }
-                self.tableView.reloadData()
-                self.noDataFoundStackView.isHidden = !self.superHeroVM.superHeroListEmpty()
+                guard let tableView = self.tableView, let noDataFoundStackView = self.noDataFoundStackView else {
+                    return
+                }
+                tableView.reloadData()
+                noDataFoundStackView.isHidden = !self.superHeroVM.superHeroListEmpty()
             }
             .store(in: &cancellables)
     }

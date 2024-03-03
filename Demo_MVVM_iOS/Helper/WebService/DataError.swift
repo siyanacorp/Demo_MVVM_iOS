@@ -22,23 +22,3 @@ enum DataError: Error {
     case connectivityError(toast: String)
     case network(Error?)
 }
-
-
-extension DataError: Equatable {
-    public static func == (lhs: DataError, rhs: DataError) -> Bool {
-        switch (lhs, rhs) {
-        case (.invalidResponse(let lhsToast), .invalidResponse(let rhsToast)):
-            return lhsToast == rhsToast
-        case (.invalidURL(let lhsToast), .invalidURL(let rhsToast)):
-            return lhsToast == rhsToast
-        case (.invalidData(let lhsToast), .invalidData(let rhsToast)):
-            return lhsToast == rhsToast
-        case (.connectivityError(let lhsToast), .connectivityError(let rhsToast)):
-            return lhsToast == rhsToast
-        case (.network, .network):
-            return true
-        default:
-            return false
-        }
-    }
-}

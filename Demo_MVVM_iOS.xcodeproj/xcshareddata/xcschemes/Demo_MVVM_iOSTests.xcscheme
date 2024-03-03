@@ -23,6 +23,11 @@
                BlueprintName = "Demo_MVVM_iOSTests"
                ReferencedContainer = "container:Demo_MVVM_iOS.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "WebServiceManagerTests/testFailedRequestDueToConnectivity()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>

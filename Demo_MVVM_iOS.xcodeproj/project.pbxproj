@@ -41,6 +41,12 @@
 		9D37C99F2B7BFBB0000E5073 /* GoodWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37C99E2B7BFBB0000E5073 /* GoodWeatherModel.swift */; };
 		9D37C9A22B7C00F7000E5073 /* AddWeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37C9A12B7C00F7000E5073 /* AddWeatherVM.swift */; };
 		9D37C9A52B7C012A000E5073 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37C9A42B7C012A000E5073 /* Constants.swift */; };
+		9D50A2902B944E37003CD8F2 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A28F2B944E37003CD8F2 /* Validations.swift */; };
+		9D50A2922B944F88003CD8F2 /* ValidationsConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A2912B944F88003CD8F2 /* ValidationsConstant.swift */; };
+		9D50A2942B9450D2003CD8F2 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A2932B9450D2003CD8F2 /* UITextField+Extension.swift */; };
+		9D50A2962B94552B003CD8F2 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A2952B94552B003CD8F2 /* UITextView+Extension.swift */; };
+		9D50A2982B945E9E003CD8F2 /* ValidationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A2972B945E9E003CD8F2 /* ValidationsTests.swift */; };
+		9D50A29C2B946AAE003CD8F2 /* MarvelSuperHeroListViewCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A29B2B946AAE003CD8F2 /* MarvelSuperHeroListViewCTests.swift */; };
 		9D6A20952B77904A00E67382 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9D6A20942B77904A00E67382 /* SDWebImage */; };
 		9D6A20972B77A53A00E67382 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A20962B77A53A00E67382 /* UIImageView+Extension.swift */; };
 		9D9150272B8FC34A00BC1091 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53552B76A84500D9DF70 /* WebServiceManager.swift */; };
@@ -148,6 +154,12 @@
 		9D37C99E2B7BFBB0000E5073 /* GoodWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherModel.swift; sourceTree = "<group>"; };
 		9D37C9A12B7C00F7000E5073 /* AddWeatherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeatherVM.swift; sourceTree = "<group>"; };
 		9D37C9A42B7C012A000E5073 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9D50A28F2B944E37003CD8F2 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		9D50A2912B944F88003CD8F2 /* ValidationsConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationsConstant.swift; sourceTree = "<group>"; };
+		9D50A2932B9450D2003CD8F2 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		9D50A2952B94552B003CD8F2 /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
+		9D50A2972B945E9E003CD8F2 /* ValidationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationsTests.swift; sourceTree = "<group>"; };
+		9D50A29B2B946AAE003CD8F2 /* MarvelSuperHeroListViewCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelSuperHeroListViewCTests.swift; sourceTree = "<group>"; };
 		9D6A20962B77A53A00E67382 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		9D9A53552B76A84500D9DF70 /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
 		9D9A53582B76AE5500D9DF70 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
@@ -315,6 +327,8 @@
 				8D8D46FB2B82FAC900628761 /* SettingsVMTests.swift */,
 				8D8D46FD2B8301C400628761 /* GoodWeatherListVMTests.swift */,
 				8DF082B52B8F1F8500A4BE9F /* AddWeatherVMTests.swift */,
+				9D50A2972B945E9E003CD8F2 /* ValidationsTests.swift */,
+				9D50A29B2B946AAE003CD8F2 /* MarvelSuperHeroListViewCTests.swift */,
 			);
 			path = Demo_MVVM_iOSTests;
 			sourceTree = "<group>";
@@ -433,6 +447,8 @@
 		9D9A53572B76AE3000D9DF70 /* WebService */ = {
 			isa = PBXGroup;
 			children = (
+				9D50A2912B944F88003CD8F2 /* ValidationsConstant.swift */,
+				9D50A28F2B944E37003CD8F2 /* Validations.swift */,
 				9D9A53812B774B3400D9DF70 /* HttpMethod.swift */,
 				9D9A53582B76AE5500D9DF70 /* DataError.swift */,
 				9D9A53832B774D5C00D9DF70 /* Resource.swift */,
@@ -463,6 +479,8 @@
 				9D9A536E2B76D04300D9DF70 /* NSObject+Extension.swift */,
 				9D6A20962B77A53A00E67382 /* UIImageView+Extension.swift */,
 				9DDEDBF12B77E4F50036365F /* String+Extension.swift */,
+				9D50A2932B9450D2003CD8F2 /* UITextField+Extension.swift */,
+				9D50A2952B94552B003CD8F2 /* UITextView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -907,12 +925,16 @@
 			files = (
 				8DE2DA7E2B7A0B8500915C6D /* GoodWeatherViewC+CustomMethods.swift in Sources */,
 				9D37C99F2B7BFBB0000E5073 /* GoodWeatherModel.swift in Sources */,
+				9D50A2922B944F88003CD8F2 /* ValidationsConstant.swift in Sources */,
 				9D9A53592B76AE5500D9DF70 /* DataError.swift in Sources */,
+				9D50A2942B9450D2003CD8F2 /* UITextField+Extension.swift in Sources */,
 				8D5957892B7B620D005388D8 /* SettingsViewC+CutomMethods.swift in Sources */,
+				9D50A2902B944E37003CD8F2 /* Validations.swift in Sources */,
 				9DF323322B7FDC2D00781FD3 /* BindingTextField.swift in Sources */,
 				9D9A53742B773BF300D9DF70 /* MarvelSuperHeroListViewC.swift in Sources */,
 				9D9A53822B774B3400D9DF70 /* HttpMethod.swift in Sources */,
 				9DDEDBF22B77E4F50036365F /* String+Extension.swift in Sources */,
+				9D50A2962B94552B003CD8F2 /* UITextView+Extension.swift in Sources */,
 				8D8E435E2B7A0EFB00AB7FB1 /* AddCityScreenViewC+CustomMethods.swift in Sources */,
 				9D9A53802B7742FC00D9DF70 /* MarvelSuperHeroModel.swift in Sources */,
 				9DDEDBFA2B77F3AF0036365F /* AppText.swift in Sources */,
@@ -960,6 +982,7 @@
 				8DF082B22B8F089000A4BE9F /* WebServiceManagerTests.swift in Sources */,
 				9D91502C2B8FC8A100BC1091 /* AppText.swift in Sources */,
 				9D91502A2B8FC42800BC1091 /* HttpMethod.swift in Sources */,
+				9D50A2982B945E9E003CD8F2 /* ValidationsTests.swift in Sources */,
 				9D9150272B8FC34A00BC1091 /* WebServiceManager.swift in Sources */,
 				9D9150282B8FC3BA00BC1091 /* MarvelSuperHeroModel.swift in Sources */,
 				8DF082B62B8F1F8500A4BE9F /* AddWeatherVMTests.swift in Sources */,
@@ -967,6 +990,7 @@
 				8D8D46FE2B8301C400628761 /* GoodWeatherListVMTests.swift in Sources */,
 				9D91502B2B8FC47500BC1091 /* DataError.swift in Sources */,
 				8DF082B02B8EFFF000A4BE9F /* ReachabilityTests.swift in Sources */,
+				9D50A29C2B946AAE003CD8F2 /* MarvelSuperHeroListViewCTests.swift in Sources */,
 				8D8D46FC2B82FAC900628761 /* SettingsVMTests.swift in Sources */,
 				9D91502D2B8FCCC600BC1091 /* Reachability.swift in Sources */,
 			);
