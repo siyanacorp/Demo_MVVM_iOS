@@ -10,16 +10,15 @@ import XCTest
 
 final class MarvelSuperHeroListViewCTests: XCTestCase {
     
-    var storyboard: UIStoryboard?
     var sut: MarvelSuperHeroListViewC?
     
     override func setUp() {
         super.setUp()
-        self.storyboard = UIStoryboard(name: "SuperHeros", bundle: nil)
-        guard let sutS = self.storyboard?.instantiateViewController(withIdentifier: MarvelSuperHeroListViewC.className) as? MarvelSuperHeroListViewC else{
+        let storyboard = UIStoryboard(name: "SuperHeros", bundle: nil)
+        guard let sutS = storyboard.instantiateViewController(withIdentifier: MarvelSuperHeroListViewC.className) as? MarvelSuperHeroListViewC else{
             fatalError("NO MarvelSuperHeroListViewC FOUND...!")
         }
-        sut = sutS
+        self.sut
         self.sut?.loadViewIfNeeded()
     }
     

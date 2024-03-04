@@ -18,26 +18,53 @@ struct Location {
 
 class GoodWeatherListVMTests: XCTestCase {
     
-    var weatherListVM: GoodWeatherListVM?
+    var viewModel: GoodWeatherListVM?
     
     override func setUp() {
         super.setUp()
-        self.weatherListVM = GoodWeatherListVM()
+        viewModel = GoodWeatherListVM()
     }
     
     override func tearDown() {
-        self.weatherListVM = nil
+        viewModel = nil
         super.tearDown()
     }
     
     func testAddWeather() {
+        // Given
+        let weatherModel = GoodWeatherModel(location: nil, current: nil) // Create your sample weather model
         
+        // When
+        self.viewModel?.addWeather(cityWeather: GoodWeatherVM(weatherModel))
+        
+        // Then
+        XCTAssertEqual(self.viewModel?.allCitiesWeather.count, 1, "Weather not added successfully")
     }
-
-
     
-    func testWeatherListEmpty() {
-        let isWeatherListEmpty = self.weatherListVM?.weatherListEmpty() ?? Bool()
-        XCTAssertTrue(isWeatherListEmpty, "Weather list should be empty initially")
+    func testNumberOfSections() {
+        // Given
+        let expectedSections = 1
+        
+        // When
+        let numberOfSections = self.viewModel?.numberOfSections
+        
+        // Then
+        XCTAssertEqual(numberOfSections, expectedSections, "Number of sections should be 1")
     }
+    
+    func testNumberOfRowsInSection() {
+        // Given
+        let weatherModel1 = GoodWeatherModel(location: nil, current: nil)
+        let weatherModel2 = GoodWeatherModel(location: nil, current: nil)
+        self.viewModel?.addWeather(cityWeather: GoodWeatherVM(weatherModel1))
+        self.viewModel?.addWeather(cityWeather: GoodWeatherVM(weatherModel2))
+        
+        // When
+        let numberOfRows = self.viewModel?.numberOfRowsInSection(0)
+        
+        // Then
+        XCTAssertEqual(numberOfRows, 2, "Number of rows should be 2")
+    }
+    
+    // You can write more tests for other methods as needed
 }

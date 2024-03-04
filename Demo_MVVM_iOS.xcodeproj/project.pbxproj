@@ -47,6 +47,17 @@
 		9D50A2962B94552B003CD8F2 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A2952B94552B003CD8F2 /* UITextView+Extension.swift */; };
 		9D50A2982B945E9E003CD8F2 /* ValidationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A2972B945E9E003CD8F2 /* ValidationsTests.swift */; };
 		9D50A29C2B946AAE003CD8F2 /* MarvelSuperHeroListViewCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A29B2B946AAE003CD8F2 /* MarvelSuperHeroListViewCTests.swift */; };
+		9D50A2A02B9475CF003CD8F2 /* MarvelSuperHeroVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53882B77564B00D9DF70 /* MarvelSuperHeroVM.swift */; };
+		9D50A2A12B947752003CD8F2 /* MarvelSuperHeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53792B773DDE00D9DF70 /* MarvelSuperHeroTableViewCell.swift */; };
+		9D50A2A22B947852003CD8F2 /* GlobalLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEDBF62B77EDDB0036365F /* GlobalLoader.swift */; };
+		9D50A2A32B9478AA003CD8F2 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A536C2B76CEB100D9DF70 /* UITableView+Extension.swift */; };
+		9D50A2A42B947955003CD8F2 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A536E2B76D04300D9DF70 /* NSObject+Extension.swift */; };
+		9D50A2A52B9479AF003CD8F2 /* ToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEDBFE2B77FF5C0036365F /* ToastManager.swift */; };
+		9D50A2A62B9479D8003CD8F2 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEDBF12B77E4F50036365F /* String+Extension.swift */; };
+		9D50A2A82B9483CB003CD8F2 /* SettingsViewCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A2A72B9483CB003CD8F2 /* SettingsViewCTests.swift */; };
+		9D50A2AC2B94855E003CD8F2 /* SettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0272AC2B7DF5DF00B2205E /* SettingsVM.swift */; };
+		9D50A2AD2B948894003CD8F2 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAB55F62B7BDBCD00E28242 /* SettingsTableViewCell.swift */; };
+		9D50A2AF2B948D8D003CD8F2 /* ViewToViewModelViewCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A2AE2B948D8D003CD8F2 /* ViewToViewModelViewCTests.swift */; };
 		9D6A20952B77904A00E67382 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9D6A20942B77904A00E67382 /* SDWebImage */; };
 		9D6A20972B77A53A00E67382 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A20962B77A53A00E67382 /* UIImageView+Extension.swift */; };
 		9D9150272B8FC34A00BC1091 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A53552B76A84500D9DF70 /* WebServiceManager.swift */; };
@@ -160,6 +171,8 @@
 		9D50A2952B94552B003CD8F2 /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
 		9D50A2972B945E9E003CD8F2 /* ValidationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationsTests.swift; sourceTree = "<group>"; };
 		9D50A29B2B946AAE003CD8F2 /* MarvelSuperHeroListViewCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelSuperHeroListViewCTests.swift; sourceTree = "<group>"; };
+		9D50A2A72B9483CB003CD8F2 /* SettingsViewCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewCTests.swift; sourceTree = "<group>"; };
+		9D50A2AE2B948D8D003CD8F2 /* ViewToViewModelViewCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewToViewModelViewCTests.swift; sourceTree = "<group>"; };
 		9D6A20962B77A53A00E67382 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		9D9A53552B76A84500D9DF70 /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
 		9D9A53582B76AE5500D9DF70 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
@@ -329,6 +342,8 @@
 				8DF082B52B8F1F8500A4BE9F /* AddWeatherVMTests.swift */,
 				9D50A2972B945E9E003CD8F2 /* ValidationsTests.swift */,
 				9D50A29B2B946AAE003CD8F2 /* MarvelSuperHeroListViewCTests.swift */,
+				9D50A2A72B9483CB003CD8F2 /* SettingsViewCTests.swift */,
+				9D50A2AE2B948D8D003CD8F2 /* ViewToViewModelViewCTests.swift */,
 			);
 			path = Demo_MVVM_iOSTests;
 			sourceTree = "<group>";
@@ -979,20 +994,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D9150292B8FC40400BC1091 /* Resource.swift in Sources */,
+				9D50A2AF2B948D8D003CD8F2 /* ViewToViewModelViewCTests.swift in Sources */,
 				8DF082B22B8F089000A4BE9F /* WebServiceManagerTests.swift in Sources */,
 				9D91502C2B8FC8A100BC1091 /* AppText.swift in Sources */,
 				9D91502A2B8FC42800BC1091 /* HttpMethod.swift in Sources */,
 				9D50A2982B945E9E003CD8F2 /* ValidationsTests.swift in Sources */,
+				9D50A2A52B9479AF003CD8F2 /* ToastManager.swift in Sources */,
 				9D9150272B8FC34A00BC1091 /* WebServiceManager.swift in Sources */,
+				9D50A2A02B9475CF003CD8F2 /* MarvelSuperHeroVM.swift in Sources */,
+				9D50A2AC2B94855E003CD8F2 /* SettingsVM.swift in Sources */,
+				9D50A2A32B9478AA003CD8F2 /* UITableView+Extension.swift in Sources */,
 				9D9150282B8FC3BA00BC1091 /* MarvelSuperHeroModel.swift in Sources */,
 				8DF082B62B8F1F8500A4BE9F /* AddWeatherVMTests.swift in Sources */,
 				8DF082B42B8F182300A4BE9F /* MarvelSuperHeroListVMTests.swift in Sources */,
+				9D50A2A62B9479D8003CD8F2 /* String+Extension.swift in Sources */,
 				8D8D46FE2B8301C400628761 /* GoodWeatherListVMTests.swift in Sources */,
 				9D91502B2B8FC47500BC1091 /* DataError.swift in Sources */,
 				8DF082B02B8EFFF000A4BE9F /* ReachabilityTests.swift in Sources */,
+				9D50A2AD2B948894003CD8F2 /* SettingsTableViewCell.swift in Sources */,
+				9D50A2A12B947752003CD8F2 /* MarvelSuperHeroTableViewCell.swift in Sources */,
+				9D50A2A82B9483CB003CD8F2 /* SettingsViewCTests.swift in Sources */,
+				9D50A2A22B947852003CD8F2 /* GlobalLoader.swift in Sources */,
 				9D50A29C2B946AAE003CD8F2 /* MarvelSuperHeroListViewCTests.swift in Sources */,
 				8D8D46FC2B82FAC900628761 /* SettingsVMTests.swift in Sources */,
 				9D91502D2B8FCCC600BC1091 /* Reachability.swift in Sources */,
+				9D50A2A42B947955003CD8F2 /* NSObject+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

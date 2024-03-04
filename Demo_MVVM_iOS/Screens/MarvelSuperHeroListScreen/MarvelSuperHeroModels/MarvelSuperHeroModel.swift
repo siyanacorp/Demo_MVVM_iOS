@@ -7,14 +7,14 @@
 
 import Foundation
 struct MarvelSuperHeroModel: Codable ,Equatable{
-    let bio: String?
-    let createdby: String?
-    let firstappearance: String?
-    let imageurl: String?
-    let name: String?
-    let publisher: String?
-    let realname: String?
-    let team: String?
+    var bio: String?
+    var createdby: String?
+    var firstappearance: String?
+    var imageurl: String?
+    var name: String?
+    var publisher: String?
+    var realname: String?
+    var team: String?
     
     enum CodingKeys: String, CodingKey {
         case bio = "bio"
@@ -27,8 +27,19 @@ struct MarvelSuperHeroModel: Codable ,Equatable{
         case team = "team"
     }
     
+    init(bio:String,createdby:String,firstappearance:String,imageurl:String,name:String,publisher:String,realname:String,team:String){
+        self.bio = bio
+        self.createdby = createdby
+        self.firstappearance = firstappearance
+        self.imageurl = firstappearance
+        self.name = firstappearance
+        self.publisher = publisher
+        self.realname = realname
+        self.team = realname
+    }
+    
     init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
+        var values = try decoder.container(keyedBy: CodingKeys.self)
         bio = try values.decodeIfPresent(String.self, forKey: .bio)
         createdby = try values.decodeIfPresent(String.self, forKey: .createdby)
         firstappearance = try values.decodeIfPresent(String.self, forKey: .firstappearance)
